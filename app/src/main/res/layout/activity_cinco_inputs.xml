@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cincoInputs"
+    android:orientation="vertical"
+    android:stretchColumns="0">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/cinco1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             
+            android:ems="10"
+            android:hint="@string/introduzca_el_primer_numero"
+            android:inputType="number"
+            android:minHeight="48dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/cinco2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/introduzca_el_segundo_numero"
+            android:inputType="number"
+            android:minHeight="48dp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/cinco3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/introduzca_el_tercer_numero"
+            android:inputType="number"
+            android:minHeight="48dp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/cinco4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/introduzca_el_cuarto_numero"
+            android:inputType="number"
+            android:minHeight="48dp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/cinco5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/introduzca_el_quinto_numero"
+            android:inputType="number"
+            android:minHeight="48dp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/buttonCinco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="100dp"
+            android:text="@string/ejecuta" />
+    </TableRow>
+</TableLayout>
+

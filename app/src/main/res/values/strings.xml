@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">intento2</string>
+    <string name="introduzca_el_primer_numero">Introduzca el primer numero</string>
+    <string name="introduzca_el_segundo_numero">Introduzca el segundo numero</string>
+    <string name="introduzca_el_tercer_numero">Introduzca el tercero numero</string>
+    <string name="introduzca_el_cuarto_numero">Introduzca el quarto numero</string>
+    <string name="introduzca_el_quinto_numero">Introduzca el quinto numero</string>
+    <string name="suma">Suma</string>
+    <string name="ejecuta">ejecuta</string>
+    <string name="introduce_el_proyecto_a_ejecutar">Introduce el proyecto a ejecutar</string>
+</resources>
