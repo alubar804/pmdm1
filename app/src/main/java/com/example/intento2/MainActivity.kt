@@ -455,13 +455,16 @@ class MainActivity : AppCompatActivity() {
         return cantidad
     }
     fun pr5(){
+        pantallaInputs(2)
         println("Proyecto5:")
+        enunciadoDos.setText(" Realizar la carga de dos números enteros por teclado e imprimir su suma y su producto.")
         //Realizar la carga de dos números enteros por teclado e imprimir su suma y su
         //producto.
         val pr5num1 = dos1.text.toString().toInt()
         val pr5num2 = dos2.text.toString().toInt()
         val suma = pr5num1 + pr5num2
         val producto = pr5num1 * pr5num2
+        resultadoDos.setText("aaaaaaaaaa"+suma.toString())
         println("El resultado de la suma es:")
         println(suma.toString())
         println("El producto de la multiplicacion es:")
