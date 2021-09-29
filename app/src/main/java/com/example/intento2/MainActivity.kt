@@ -13,26 +13,26 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        enunciado.text = "Proyecto 12"
+        enunciado.text = "Proyecto 17"
         button.setOnClickListener {
             val num1 = in1.text.toString().toInt()
-            val num2 = in2.text.toString().toInt()
+//            val num2 = in2.text.toString().toInt()
 //            val num3 = in3.text.toString().toInt()
 //            val num4 = in4.text.toString().toInt()
 //          val num5 = in5.text.toString().toInt()
-            val suma = num1 + num2
-            val resta = num1 - num2
-            val producto = num1 * num2
-            val division = num1 / num2
+//            val suma = num1 + num2
+//            val resta = num1 - num2
+//            val producto = num1 * num2
+//            val division = num1 / num2
 //          val cuadrado=num1*4
 //            val promedio = suma / 4
+            val digitos = if (num1 < 10) 1  else 2
+            
+            resultado.text =("El numero de digitos es $digitos")
 
-            if (num1<num2)
-                resultado.text = "El resultado de la suma es: $suma" +
-                        "\nEl resultado de la resta es: $resta"
-            else
-                resultado.text = "El resultado de la multiplicacion es: $producto " +
-                        "\nl resultado de la division es: $division"
+
+
+
 
         }
     }
@@ -40,61 +40,6 @@ class MainActivity : AppCompatActivity() {
 
 }
 
-
-fun pr13(){
-
-    println("Proyecto13:")
-    //Se ingresan tres notas de un alumno, si el promedio es mayor o igual a
-    //siete mostrar un mensaje "Promocionado".
-    val pr13nota1 = 123.4f
-    val pr13nota2 = 56.7f
-    val pr13nota3 = 89.1f
-    val pr13media =(pr13nota1+pr13nota2+pr13nota3)/3
-    if(pr13media>=7)
-        println("Promocionado")
-
-
-
-
-}
-fun pr14(){
-    println("Proyecto14:")
-    //Se ingresa por teclado un número entero comprendido entre 1 y 99,
-    //mostrar un mensaje indicando si el número tiene uno o dos dígitos.
-    //(Tener en cuenta que condición debe cumplirse para tener dos dígitos, un
-    //número entero)
-    print("Ingrese un valor comprendido entre 1 y 99:")
-    val pr14num1 = readLine()!!.toInt()
-    if (pr14num1 < 10)
-        println("Tiene un dígito")
-    else
-        println("Tiene dos dígitos")
-
-}
-fun pr15(){
-    println("Proyecto15:")
-    //Cargar dos valores enteros, almacenar el mayor de los mismos en otra variable y
-    //mostrarlo.
-
-    print("Ingrese primer numero:")
-    val pr15num1 = readLine()!!.toInt()
-    print("Ingrese segundo numero:")
-    val pr15num2 = readLine()!!.toInt()
-    val mayor = if (pr15num1 > pr15num2) pr15num1 else pr15num2
-    println("El mayor entre $pr15num1 y $pr15num2 es $mayor")
-
-}
-fun pr16(){
-    println("Proyecto16:")
-    //Ingresar por teclado un valor entero. Almacenar en otra variable el cuadrado de
-    //dicho número si el valor ingresado es par, en caso que sea impar guardar el
-    //cubo.
-    //Mostrar además un mensaje que indique si se calcula el cuadrado o el cubo.
-    print("Ingrese primer numero:")
-    val pr16num1 = readLine()!!.toDouble()
-    val operado = if (pr16num1%2.0==0.0) pr16num1.pow(2) else pr16num1.pow(3)
-    println("El resultado es $operado")
-}
 fun pr17() {
 
     println("Proyecto17:")

@@ -35,6 +35,8 @@
             android:hint="@string/introduzca_el_primer_numero"
             android:inputType="numberDecimal"
             android:minHeight="48dp" />
+
+
     </TableRow>
 
 
