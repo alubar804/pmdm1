@@ -16,7 +16,7 @@
         android:layout_height="match_parent" >
 
         <TextView
-            android:id="@+id/enunciadoUno"
+            android:id="@+id/enunciado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView" />
@@ -27,7 +27,7 @@
         android:layout_height="match_parent" >
 
         <EditText
-            android:id="@+id/uno1"
+            android:id="@+id/in1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
@@ -37,19 +37,36 @@
             android:minHeight="48dp" />
     </TableRow>
 
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/in2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/introduzca_el_segundo_numero"
+            android:inputType="number"
+            android:minHeight="48dp" />
+    </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
         <Button
-            android:id="@+id/buttonUno"
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_marginTop="100dp"
             android:text="@string/ejecuta" />
+
     </TableRow>
+
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent">

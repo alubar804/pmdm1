@@ -1,385 +1,132 @@
 package com.example.intento2
 
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import com.example.intento2.*
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlin.math.pow
-import com.example.intento2.unInput.*
-import com.example.intento2.dosInputs.*
-import com.example.intento2.tresInputs.*
-import com.example.intento2.cuatroInputs.*
-import com.example.intento2.cincoInputs.*
 
+import kotlinx.android.synthetic.main.activity_main.*
     fun main(){
-//    do {
-//        println("introduce el numero de proyecto")
-//        val selector = readLine()!!.toInt()
-//        when (selector) {
-//            -1 -> continue
-//            3 -> pr3()
-//            4 -> pr4()
-//            5 -> pr5()
-//            6 -> pr6()
-//            7 -> pr7()
-//            8 -> pr8()
-//            9 -> pr9()
-//            10 -> pr10()
-//            11 -> pr11()
-//            12 -> pr12()
-//            13 -> pr13()
-//            14 -> pr14()
-//            15 -> pr15()
-//            16 -> pr16()
-//            17 -> pr17()
-//            18 -> pr18()
-//            19 -> pr19()
-//            20 -> pr20()
-//            21 -> pr21()
-//            22 -> pr22()
-//            23 -> pr23()
-//            24 -> pr24()
-//            25 -> pr25()
-//            26 -> pr26()
-//            27 -> pr27()
-//            28 -> pr28()
-//            29 -> pr29()
-//            30 -> pr30()
-//            31 -> pr31()
-//            32 -> pr32()
-//            33 -> pr33()
-//            34 -> pr34()
-//            35 -> pr35()
-//            36 -> pr36()
-//            37 -> pr37()
-//            38 -> pr38()
-//            39 -> pr39()
-//            40 -> pr40()
-//            41 -> pr41()
-//            42 -> pr42()
-//            43 -> pr43()
-//            44 -> pr44()
-//            45 -> pr45()
-//            46 -> pr46()
-//            47 -> pr47()
-//            48 -> pr48()
-//            49 -> pr49()
-//            50 -> pr50()
-//            51 -> pr51()
-//            52 -> pr52()
-//            53 -> pr53()
-//            54 -> pr54()
-//            55 -> pr55()
-//            56 -> pr56()
-//            57 -> pr57()
-//            58 -> pr58()
-//            59 -> pr59()
-//            60 -> pr60()
-//            61 -> pr61()
-//            62 -> pr62()
-//            63 -> pr63()
-//            64 -> pr64()
-//            65 -> pr65()
-//            66 -> pr66()
-//            67 -> pr67()
-//            68 -> pr68()
-//            69 -> pr69()
-//            70 -> pr70()
-//            71 -> pr71()
-//            72 -> pr72()
-//            73 -> pr73()
-//            74 -> pr74()
-//            75 -> pr75()
-//            76 -> pr76()
-//            77 -> pr77()
-//            78 -> pr78()
-//            79 -> pr79()
-//            80 -> pr80()
-//            81 -> pr81()
-//            82 -> pr82()
-//            83 -> pr83()
-//            84 -> pr84()
-//            85 -> pr85()
-//            86 -> pr86()
-//            87 -> pr87()
-//            88 -> pr88()
-//            89 -> pr89()
-//            90 -> pr90()
-//            91 -> pr91()
-//            92 -> pr92()
-//            93 -> pr93()
-//            94 -> pr94()
-//            95 -> pr95()
-//            96 -> pr96()
-//            97 -> pr97()
-//            98 -> pr98()
-//            99 -> pr99()
-//            100 -> pr100()
-//            101 -> pr101()
-//            102 -> pr102()
-//            103 -> pr103()
-//            104 -> pr104()
-//            105 -> pr105()
-//            106 -> pr106()
-//            107 -> pr107()
-//            108 -> pr108()
-//            109 -> pr109()
-//            110 -> pr110()
-//            111 -> pr111()
-//            112 -> pr112()
-//            113 -> pr113()
-//            114 -> pr114()
-//            115 -> pr115()
-//            116 -> pr116()
-//            117 -> pr117()
-//            118 -> pr118()
-//            119 -> pr119()
-//            120 -> pr120()
-//            121 -> pr121()
-//            122 -> pr122()
-//            123 -> pr123()
-//            124 -> pr124()
-//            125 -> pr125()
-//            126 -> pr126()
-//            127 -> pr127()
-//            128 -> pr128()
-//            129 -> pr129()
-//            130 -> pr130()
-//            131 -> pr131()
-//            132 -> pr132()
-//            133 -> pr133()
-//            134 -> pr134()
-//            135 -> pr135()
-//            136 -> pr136()
-//            137 -> pr137()
-//            138 -> pr138()
-//            139 -> pr139()
-//            140 -> pr140()
-//            141 -> pr141()
-//            142 -> pr142()
-//            143 -> pr143()
-//            144 -> pr144()
-//            145 -> pr145()
-//            146 -> pr146()
-//            147 -> pr147()
-//            148 -> pr148()
-//            149 -> pr149()
-//            150 -> pr150()
-//            151 -> pr151()
-//            152 -> pr152()
-//            153 -> pr153()
-//            154 -> pr154()
-//            155 -> pr155()
-//            156 -> pr156()
-//            157 -> pr157()
-//            158 -> pr158()
-//            159 -> pr159()
-//            160 -> pr160()
-//            161 -> pr161()
-//            162 -> pr162()
-//            163 -> pr163()
-//            164 -> pr164()
-//            165 -> pr165()
-//            166 -> pr166()
-//            167 -> pr167()
-//            168 -> pr168()
-//            169 -> pr169()
-//            170 -> pr170()
-//            171 -> pr171()
-//            172 -> pr172()
-//            173 -> pr173()
-//            174 -> pr174()
-//            175 -> pr175()
-//            176 -> pr176()
-//            177 -> pr177()
-//            178 -> pr178()
-//            179 -> pr179()
-//            180 -> pr180()
-//            181 -> pr181()
-//            182 -> pr182()
-//            183 -> pr183()
-//            184 -> pr184()
-//            185 -> pr185()
-//            186 -> pr186()
-//            187 -> pr187()
-//            188 -> pr188()
-//            189 -> pr189()
-//            190 -> pr190()
-//            191 -> pr191()
-//            192 -> pr192()
-//            193 -> pr193()
-//            194 -> pr194()
-//            195 -> pr195()
-//            196 -> pr196()
-//            197 -> pr197()
-//            198 -> pr198()
-//            199 -> pr199()
-//            200 -> pr200()
-//
-//        }
-//    }while (selector!=-1)
-    for (x in 3..200)
-        println(""+x+"-> cantidad = 0")
-//    for (x in 22..200) {
-//        println("\tfun pr" + x + "() {")
-//        println("\t\tprintln(\"Proyecto" + x + ":\")")
-//        println("\t\t//")
-//        println("\t}")
-//    }
 
 
+//        for (x in 3..200)
+//            println(""+x+"-> cantidad = 0")
+    //    for (x in 22..200) {
+    //        println("\tfun pr" + x + "() {")
+    //        println("\t\tprintln(\"Proyecto" + x + ":\")")
+    //        println("\t\t//")
+    //        println("\t}")
+    //    }
+         fun pr3() {
+                println("Proyecto3:")
+                val pr3Lado = 50
+                val pr3per = pr3Lado * 4
+                val pr3Super = pr3Lado * pr3Lado
+
+                val resul = "El lado es: $pr3Lado \n " +
+                "El perimetro es igual a la suma de los lados: $pr3per \n" +
+                "La superficie del cuadrado es igual al lado" +
+                        " multiplicado por si mismo + $pr3Super"
+                resultado.text = resul
+            }
+
+        fun pr4(){
+
+            val pr4peso1 = 123.4f
+            val pr4peso2 = 56.7f
+            val pr4peso3 = 89.1f
+            val media =(pr4peso1+pr4peso2+pr4peso3)/3
+            resultado.text = "El promedio es: $media"
+        }
+        fun pr5(){
+
+            val pr5num1 = in1.text.toString().toInt()
+            val pr5num2 = in2.text.toString().toInt()
+            val suma = pr5num1 + pr5num2
+            val producto = pr5num1 * pr5num2
+            val resul = "El resultado de la suma es:"+suma.toString()+"El producto de la multiplicacion es:"+producto.toString()
+            resultado.text = resul
+        }
+         fun pr6(){
+            val num1 = in1.text.toString().toInt()
+            val cuadrado=num1*4
+            val resul = "El perimetro es igual a la suma de los lados : $cuadrado"
+            resultado.text = resul
+
+         }
 }
-    fun pr3() {
-        println("Proyecto3:")
-        //Definir una variable inmutable con el valor 50 que representa el lado de un
-        //cuadrado, en otras dos variables inmutables almacenar la superficie y el
-        //perímetro del cuadrado.
-        //Mostrar la superficie y el perímetro por la Consola.
-        val pr3Lado = 50
-        val pr3per = pr3Lado * 4
-        val pr3Super = pr3Lado * pr3Lado
-        println("El lado es: " + pr3Lado.toString())
-        println("El perimetro es igual a la suma de los lados:" + pr3per.toString())
-        println("La superficie del cuadrado es igual al lado multiplicado por si mismo" + pr3Super.toString())
-    }
-    fun pr4(){
-        println("Proyecto4:")
-        //Definir tres variables inmutables y cargar por asignación los pesos de tres
-        //personas con valores Float. Calcular el promedio de pesos de las
-        //personas y mostrarlo.
-        val pr4peso1 = 123.4f
-        val pr4peso2 = 56.7f
-        val pr4peso3 = 89.1f
-        val media =(pr4peso1+pr4peso2+pr4peso3)/3
-        println("El promedio es: "+media.toString())
+
 
 
         }
-    fun pr5(){
-        val pr5num1 = dos1.text.toString().toInt()
-        val pr5num2 = dos2.text.toString().toInt()
-        val suma = pr5num1 + pr5num2
-        val producto = pr5num1 * pr5num2
-        val resul = "El resultado de la suma es:"+suma.toString()+"El producto de la multiplicacion es:"+producto.toString()
-        resultadoDos.text = resul
-        }
-
-    fun pr6(){
-        println("Proyecto6:")
-        //Realizar la carga del lado de un cuadrado, mostrar por pantalla el perímetro del
-        //mismo (El perímetro de un cuadrado se calcula multiplicando el valor del lado por
-        //cuatro)
-        println("introduce el lado del cuadrado")
-        val pr6num1 = readLine()!!.toInt()
-        val pr6per=pr6num1*4
-        println("El perimetro es igual a la suma de los lados:"+pr6per.toString())
 
 
-        }
+
     fun pr7(){
-        println("Proyecto7:")
-        //Se debe desarrollar un programa que pida el ingreso del precio de un artículo y
-        //la cantidad que lleva el cliente. Mostrar lo que debe abonar el comprador.
-        println("introduce el precio del producto")
-        val pr7num1 = readLine()!!.toInt()
-        println("introduce la cantidad de productos")
-        val pr7num2 = readLine()!!.toInt()
-        val precioTotal = pr7num1 * pr7num2
-        println("El precio total de los productos es:")
-        println(precioTotal.toString())
 
+       val num1 = in1.text.toString().toInt()
+                   val num2 = in2.text.toString().toInt()
+                   val producto = num1 * num2
+                   resultado.text = "El precio total de los productos es: $producto"
         }
     fun pr8(){
-        println("Proyecto8:")
-        //Escribir un programa en el cual se ingresen cuatro números enteros,
-        //calcular e informar la suma de los dos primeros y el producto del tercero y
-        //el cuarto
-        println("introduce el primer numero")
-        val pr8num1 = readLine()!!.toInt()
-        println("introduce el segundo numero")
-        val pr8num2 = readLine()!!.toInt()
-        println("introduce el tercer numero")
-        val pr8num3 = readLine()!!.toInt()
-        println("introduce el cuarto numero")
-        val pr8num4 = readLine()!!.toInt()
-        val pr8suma= pr8num1+pr8num2
-        val pr8producto= pr8num3* pr8num4
-        println("El resultado de la suma es:")
-        println(pr8suma.toString())
-        println("El producto de la multiplicacion es:")
-        println(pr8producto.toString())
 
+val num1 = in1.text.toString().toInt()
+            val num2 = in2.text.toString().toInt()
+          val num3 = in3.text.toString().toInt()
+          val num4 = in4.text.toString().toInt()
+          val suma = num1 + num2
+            val producto = num3 * num4
+            resultado.text = "El resultado de la suma es: $suma" +
+                    "El producto de la multiplicacion es: $producto"
         }
     fun pr9(){
-        println("Proyecto9:")
-        //Realizar un programa que lea por teclado cuatro valores numéricos
-        //enteros e informar su suma y promedio.
-        println("introduce el primer numero")
-        val pr9num1 = readLine()!!.toInt()
-        println("introduce el segundo numero")
-        val pr9num2 = readLine()!!.toInt()
-        println("introduce el tercer numero")
-        val pr9num3 = readLine()!!.toInt()
-        println("introduce el cuarto numero")
-        val pr9num4 = readLine()!!.toInt()
-        val pr9suma= pr9num1+pr9num2+pr9num3+pr9num4
-        val pr9promedio = pr9suma/4
-        println("El resultado de la suma es:")
-        println(pr9suma.toString())
-        println("El producto del promedio es:")
-        println(pr9promedio.toString())
 
+                val num1 = in1.text.toString().toInt()
+                   val num2 = in2.text.toString().toInt()
+                 val num3 = in3.text.toString().toInt()
+                 val num4 = in4.text.toString().toInt()
+                 val suma = num1 + num2 + num3 + num4
+                   val promedio = suma/4
+                   resultado.text = "El resultado de la suma es: $suma \n" +
+                           "El producto de la multiplicacion es: $promedio"
 
         }
     fun pr10(){
-        println("Proyecto10:")
-        //Ingresar el sueldo de una persona, si supera los 3000 pesos mostrar un mensaje
-        //en pantalla indicando que debe abonar impuestos.
-        println("introduce tu sueldo")
-        val pr10num1 = readLine()!!.toDouble()
-        if (pr10num1>3000)
-            println("paga impuestos")
-
+estos.
+                    val num1 = in1.text.toString().toInt()
+                    if(num1>3000)
+                    resultado.text = "Paga impuestos"
         }
     fun pr11(){
-        println("Proyecto11:")
-        //Realizar un programa que solicite ingresar dos números enteros distintos y
-        //muestre por pantalla el mayor de ellos (suponemos que el operador del
-        //programa ingresa valores distintos, no valida nuestro programa dicha situación)
-        println("introduce el primer numero")
-        val pr11num1 = readLine()!!.toInt()
-        println("introduce el segundo numero")
-        val pr11num2 = readLine()!!.toInt()
-        println("El numero mas grande es:")
-        if (pr11num1<pr11num2)
-            println(pr11num2.toString())
-        else
-            println(pr11num1.toString())
+                    val num1 = in1.text.toString().toInt()
+                    val num2 = in2.text.toString().toInt()
 
-
+                    if (num1<num2)
+                        resultado.text = "El numero mas grande es: $num2"
+                    else
+                        resultado.text = "El numero mas grande es: $num1"
         }
     fun pr12(){
-        println("Proyecto12:")
-        //Se ingresan por teclado 2 valores enteros. Si el primero es menor al segundo
-        //calcular la suma y la resta, luego mostrarlos, sino calcular el producto y la
-        //división.
-        println("introduce el primer numero")
-        val pr12num1 = readLine()!!.toInt()
-        println("introduce el segundo numero")
-        val pr12num2 = readLine()!!.toInt()
-        if (pr12num1<pr12num2) {
-            val pr12suma = pr12num1 + pr12num2
-            println("El resultado de la suma es:")
-            println(pr12suma.toString())
-            val pr12resta = pr12num1 - pr12num2
-            println("El resultado de la resta es:")
-            println(pr12suma.toString())
+              val num1 = in1.text.toString().toInt()
+                   val num2 = in2.text.toString().toInt()
+       //            val num3 = in3.text.toString().toInt()
+       //            val num4 = in4.text.toString().toInt()
+       //          val num5 = in5.text.toString().toInt()
+                   val suma = num1 + num2
+                   val resta = num1 - num2
+                   val producto = num1 * num2
+                   val division = num1 / num2
+       //          val cuadrado=num1*4
+       //            val promedio = suma / 4
 
-        }else {
-            val pr12producto = pr12num1 * pr12num2
-            println("El producto de la multiplicacion es:")
-            println(pr12producto.toString())
-            val pr12division = pr12num1 / pr12num2
-            println("El producto de la multiplicacion es:")
-            println(pr12division.toString())
-        }
+                   if (num1<num2)
+                       resultado.text = "El resultado de la suma es: $suma" +
+                               "\nEl resultado de la resta es: $resta"
+                   else
+                       resultado.text = "El resultado de la multiplicacion es: $producto " +
+                               "\nl resultado de la division es: $division"
 
         }
     fun pr13(){
