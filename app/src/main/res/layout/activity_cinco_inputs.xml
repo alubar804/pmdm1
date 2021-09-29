@@ -7,7 +7,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".cincoInputs"
+    tools:context=".MainActivity"
     android:orientation="vertical"
     android:stretchColumns="0">
 
@@ -16,7 +16,7 @@
         android:layout_height="match_parent" >
 
         <TextView
-            android:id="@+id/enunciadoCinco"
+            android:id="@+id/enunciado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView" />
@@ -27,7 +27,7 @@
         android:layout_height="match_parent" >
 
         <EditText
-            android:id="@+id/cinco1"
+            android:id="@+id/in1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
              
@@ -42,7 +42,7 @@
         android:layout_height="match_parent" >
 
         <EditText
-            android:id="@+id/cinco2"
+            android:id="@+id/in2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
              
@@ -57,7 +57,7 @@
         android:layout_height="match_parent" >
 
         <EditText
-            android:id="@+id/cinco3"
+            android:id="@+id/in3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
              
@@ -72,7 +72,7 @@
         android:layout_height="match_parent" >
 
         <EditText
-            android:id="@+id/cinco4"
+            android:id="@+id/in4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
              
@@ -87,7 +87,7 @@
         android:layout_height="match_parent" >
 
         <EditText
-            android:id="@+id/cinco5"
+            android:id="@+id/in5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
              
@@ -102,7 +102,7 @@
         android:layout_height="match_parent" >
 
         <Button
-            android:id="@+id/buttonCinco"
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -114,7 +114,7 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/resultadoCinco"
+            android:id="@+id/resultado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView" />

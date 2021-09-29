@@ -13,34 +13,52 @@
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-    <TableRow
-        android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
-        <EditText
-            android:id="@+id/selector"
+        <TextView
+            android:id="@+id/enunciadoUno"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:ems="10"
-            android:hint="@string/introduce_el_proyecto_a_ejecutar"
-            android:inputType="number"
-            android:minHeight="48dp" />
+            android:text="TextView" />
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
+        <EditText
+            android:id="@+id/uno1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:hint="@string/introduzca_el_primer_numero"
+            android:inputType="number"
+            android:minHeight="48dp" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
         <Button
-            android:id="@+id/buttonMain"
+            android:id="@+id/buttonUno"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_marginTop="100dp"
             android:text="@string/ejecuta" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
     </TableRow>
 </TableLayout>
 

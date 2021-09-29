@@ -7,7 +7,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".unInput"
+    tools:context=".MainActivity"
     android:orientation="vertical"
     android:stretchColumns="0">
 
@@ -27,7 +27,7 @@
         android:layout_height="match_parent" >
 
         <EditText
-            android:id="@+id/uno1"
+            android:id="@+id/in1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
@@ -43,7 +43,7 @@
         android:layout_height="match_parent" >
 
         <Button
-            android:id="@+id/buttonUno"
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -55,7 +55,7 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/resultadoUno"
+            android:id="@+id/resultado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView" />

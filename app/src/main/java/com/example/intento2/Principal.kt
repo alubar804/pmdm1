@@ -2,11 +2,11 @@ package com.example.intento2
 
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.math.pow
-import com.example.intento2.unInput
-import com.example.intento2.dosInputs
-import com.example.intento2.tresInputs
-import com.example.intento2.cuatroInputs
-import com.example.intento2.cincoInputs
+import com.example.intento2.unInput.*
+import com.example.intento2.dosInputs.*
+import com.example.intento2.tresInputs.*
+import com.example.intento2.cuatroInputs.*
+import com.example.intento2.cincoInputs.*
 
     fun main(){
 //    do {
@@ -253,20 +253,12 @@ import com.example.intento2.cincoInputs
 
         }
     fun pr5(){
-        println("Proyecto5:")
-        //Realizar la carga de dos números enteros por teclado e imprimir su suma y su
-        //producto.
-        println("introduce el primer numero")
-        val pr5num1 = readLine()!!.toInt()
-        println("introduce el segundo numero")
-        val pr5num2 = readLine()!!.toInt()
+        val pr5num1 = dos1.text.toString().toInt()
+        val pr5num2 = dos2.text.toString().toInt()
         val suma = pr5num1 + pr5num2
         val producto = pr5num1 * pr5num2
-        println("El resultado de la suma es:")
-        println(suma.toString())
-        println("El producto de la multiplicacion es:")
-        println(producto.toString())
-
+        val resul = "El resultado de la suma es:"+suma.toString()+"El producto de la multiplicacion es:"+producto.toString()
+        resultadoDos.text = resul
         }
 
     fun pr6(){
