@@ -94,7 +94,7 @@ val num1 = in1.text.toString().toInt()
 
         }
     fun pr10(){
-estos.
+
                     val num1 = in1.text.toString().toInt()
                     if(num1>3000)
                     resultado.text = "Paga impuestos"
@@ -111,15 +111,10 @@ estos.
     fun pr12(){
               val num1 = in1.text.toString().toInt()
                    val num2 = in2.text.toString().toInt()
-       //            val num3 = in3.text.toString().toInt()
-       //            val num4 = in4.text.toString().toInt()
-       //          val num5 = in5.text.toString().toInt()
                    val suma = num1 + num2
                    val resta = num1 - num2
                    val producto = num1 * num2
                    val division = num1 / num2
-       //          val cuadrado=num1*4
-       //            val promedio = suma / 4
 
                    if (num1<num2)
                        resultado.text = "El resultado de la suma es: $suma" +
@@ -143,16 +138,6 @@ estos.
         }
     fun pr14(){
                    val num1 = in1.text.toString().toInt()
-       //            val num2 = in2.text.toString().toInt()
-       //            val num3 = in3.text.toString().toInt()
-       //            val num4 = in4.text.toString().toInt()
-       //          val num5 = in5.text.toString().toInt()
-       //            val suma = num1 + num2
-       //            val resta = num1 - num2
-       //            val producto = num1 * num2
-       //            val division = num1 / num2
-       //          val cuadrado=num1*4
-       //            val promedio = suma / 4
 
                    if (num1 < 10)
                        resultado.text =("Tiene un dígito")
@@ -165,15 +150,6 @@ estos.
     fun pr15(){
             val num1 = in1.text.toString().toInt()
             val num2 = in2.text.toString().toInt()
-//            val num3 = in3.text.toString().toInt()
-//            val num4 = in4.text.toString().toInt()
-//          val num5 = in5.text.toString().toInt()
-//            val suma = num1 + num2
-//            val resta = num1 - num2
-//            val producto = num1 * num2
-//            val division = num1 / num2
-//          val cuadrado=num1*4
-//            val promedio = suma / 4
             val mayor = if (num1 > num2) num1 else num2
             resultado.text =("El mayor entre $num1 y $num2 es $mayor")
 
@@ -183,16 +159,6 @@ estos.
         }
     fun pr16(){
                   val num1 = in1.text.toString().toDouble()
-      //            val num2 = in2.text.toString().toInt()
-      //            val num3 = in3.text.toString().toInt()
-      //            val num4 = in4.text.toString().toInt()
-      //          val num5 = in5.text.toString().toInt()
-      //            val suma = num1 + num2
-      //            val resta = num1 - num2
-      //            val producto = num1 * num2
-      //            val division = num1 / num2
-      //          val cuadrado=num1*4
-      //            val promedio = suma / 4
                   val operado = if (num1%2.0==0.0) num1.pow(2) else num1.pow(3)
 
                   resultado.text =("El resultado es $operado")
@@ -202,83 +168,205 @@ estos.
         }
     fun pr17() {
 
-        println("Proyecto17:")
-        //Cargar un valor entero por teclado comprendido entre 1 y 99. Almacenar
-        //en otra variable la cantidad de dígitos que tiene el valor ingresado por
-        //teclado.
-        //Mostrar la cantidad de dígitos del número ingresado por teclado.
-        print("Ingrese un valor comprendido entre 1 y 99:")
-        val pr17num1 = readLine()!!.toInt()
-        val digitos = if (pr17num1 < 10) 1  else 2
-        println("El numero de digitos es $digitos")
+                 val num1 = in1.text.toString().toInt()
+                   val digitos = if (num1 < 10) 1  else 2
+
+                   resultado.text =("El numero de digitos es $digitos")
     }
     fun pr18() {
 
-        println("Proyecto18:")
-        //Confeccionar un programa que pida por teclado tres notas de un alumno, calcule
-        //el promedio e imprima alguno de estos mensajes:
-        //Si el promedio es >=7 mostrar "Promocionado".
-        //Si el promedio es >=4 y <7 mostrar "Regular".
-        //Si el promedio es <4 mostrar "Reprobado".
-        print("Ingresa numero")
-        val num1 = readLine()!!.toInt()
+                  val num1 = in1.text.toString().toInt()
+                  val num2 = in2.text.toString().toInt()
+                  val num3 = in3.text.toString().toInt()
+
+
+                  val suma = num1 + num2 + num3
+                  val promedio = suma / 3
+                  val mensaje = if (promedio>=7) "Promocionado"
+                  else if (promedio>=4 && promedio<7) "Regular"
+                  else "Reprobado"
+                  resultado.text =("tu trabajo ha sido $mensaje")
+
+
 
     }
     fun pr19() {
 
-        println("Proyecto19:")
-        //Se cargan por teclado tres números distintos. Mostrar por pantalla el
-        //mayor de ellos.
+                   val num1 = in1.text.toString().toInt()
+                   val num2 = in2.text.toString().toInt()
+                   val num3 = in3.text.toString().toInt()
+                   if (num1 > num2)
+                       if (num1 > num3)
+                           resultado.text =("el numero mas grande es $num1")
+                       else
+                           resultado.text =("el numero mas grande es $num3")
+                   else
+                       if (num2 > num3)
+                           resultado.text =("el numero mas grande es $num2")
+                       else
+                           resultado.text =("el numero mas grande es $num3")
+
 
     }
     fun pr20() {
 
-        println("Proyecto20:")
-        //Se ingresa por teclado un valor entero, mostrar una leyenda que indique si
-        //el número es positivo, nulo o negativo.
+                 val num1 = in1.text.toString().toInt()
+                 if (num1 ==0)
+                         resultado.text =("el numero $num1 es igual a cero")
+                 else if (num1 <0)
+                     resultado.text =("el numero $num1 es negativo")
+                 else
+                     resultado.text =("el numero $num1 es positivo")
+
+
+
 
     }
     fun pr21() {
-        println("Proyecto21:")
-        //Confeccionar un programa que permita cargar un número entero positivo
-        //de hasta tres cifras y muestre un mensaje indicando si tiene 1, 2, o 3
-        //cifras. Mostrar un mensaje de error si el número de cifras es mayor.
+                  val num1 = in1.text.toString().toInt()
+                  if (num1>-1)
+                      if (num1 <10)
+                          resultado.text =("el numero $num1 tiene 1 cifra")
+                      else if (num1 <100)
+                          resultado.text =("el numero $num1 tiene 2 cifras")
+                      else if (num1<1000)
+                          resultado.text =("el numero $num1 tiene 3 cifras")
+                      else
+                          resultado.text = "error"
+                  else
+                      resultado.text = "negativo no validos"
+
     }
     fun pr22() {
-        println("Proyecto22:")
-        //
+         val num1 = in1.text.toString().toInt()
+                    val num2 = in2.text.toString().toInt()
+
+                    val porcentaje = num2 * 100 / num1;
+                    if ( porcentaje >= 90)
+                        resultado.text = ("Nivel máximo")
+                    else
+                        if (porcentaje >= 75)
+                            resultado.text =("Nivel medio")
+                        else
+                            if ( porcentaje >= 50)
+                                resultado.text =("Nivel regular")
+                            else
+                                resultado.text =("Fuera de nivel")
     }
     fun pr23() {
-        println("Proyecto23:")
-        //
+        (num1 > num2 && num1 > num3)
+                         resultado.text=("$num1")
+                     else
+                         if (num2 > num3)
+                             resultado.text=("$num2")
+                         else
+                             resultado.text=("$num3");
     }
+                                in1.hint="Ingrese dia"
+                                in2.hint="Ingrese mes"
+                                in3.hint="Ingrese año"
     fun pr24() {
-        println("Proyecto24:")
-        //
+        if (num2 ==1  || num2 ==2 || num2 ==3)
+            resultado.text="Corresponde al primer trimestre"
     }
     fun pr25() {
-        println("Proyecto25:")
-        //
+           if (num1 ==24  && num2 ==12 )
+                        resultado.text="La fecha ingresada corresponde a navidad."
     }
     fun pr26() {
-        println("Proyecto26:")
-        //
+        val num1 = in1.text.toString().toDouble()
+                    val num2 = in2.text.toString().toDouble()
+                    val num3 = in3.text.toString().toDouble()
+                    var pow = num1.pow(3)
+        //            val num4 = in4.text.toString().toInt()
+        //          val num5 = in5.text.toString().toInt()
+        //            val suma = num1 + num2 + num3
+        //            val resta = num1 - num2
+        //            val producto = num1 * num2
+        //            val division = num1 / num2
+        //          val cuadrado=num1*4
+        //            val promedio = suma / 3
+        //            val digitos = if (num1 < 10) 1  else 2
+        //            val mensaje = if (promedio>=7) "Promocionado"
+        //            else if (promedio>=4 && promedio<7) "Regular"
+        //            else "Reprobado"
+                    if (num1 == num2  && num2 == num3 )
+
+                        resultado.text="el cubo es igual a $pow"
     }
     fun pr27() {
-        println("Proyecto27:")
-        //
+                  val num1 = in1.text.toString().toDouble()
+                  val num2 = in2.text.toString().toDouble()
+                  val num3 = in3.text.toString().toDouble()
+                  var pow = num1.pow(3)
+      //            val num4 = in4.text.toString().toInt()
+      //          val num5 = in5.text.toString().toInt()
+      //            val suma = num1 + num2 + num3
+      //            val resta = num1 - num2
+      //            val producto = num1 * num2
+      //            val division = num1 / num2
+      //          val cuadrado=num1*4
+      //            val promedio = suma / 3
+      //            val digitos = if (num1 < 10) 1  else 2
+      //            val mensaje = if (promedio>=7) "Promocionado"
+      //            else if (promedio>=4 && promedio<7) "Regular"
+      //            else "Reprobado"
+                  if (num1 <10 && num2<10  &&  num3<10)
+
+                      resultado.text="todos son menores a 10"
+                  else
+                      resultado.text=""
     }
     fun pr28() {
         println("Proyecto28:")
         //
     }
+
     fun pr29() {
-        println("Proyecto29:")
-        //
+                    val num1 = in1.text.toString().toInt()
+                    val num2 = in2.text.toString().toInt()
+        //           val num3 = in3.text.toString().toInt()
+        //            val num4 = in4.text.toString().toInt()
+        //            val num5 = in5.text.toString().toInt()
+        //            val suma = num1 + num2 + num3
+        //            val resta = num1 - num2
+        //            val producto = num1 * num2
+        //            val division = num1 / num2
+        //          val cuadrado=num1*4
+        //            val promedio = suma / 3
+        //            val digitos = if (num1 < 10) 1  else 2
+
+                    if (num1 >0 && num2 >0)
+                        resultado.text="esta en el primer cuadrante"
+                    else if (num1 <0 && num2 >0)
+                        resultado.text="esta en el segundo cuadrante"
+                    else if (num1 <0 && num2 <0)
+                        resultado.text="esta en el cuarto cuadrante"
+                    else if (num1 >0 && num2 <0)
+                        resultado.text="esta en el tercer cuadrante"
+                    else
+                        resultado.text=""
+        }
     }
     fun pr30() {
-        println("Proyecto30:")
-        //
+         val num1 = in1.text.toString().toInt()
+                    val num2 = in2.text.toString().toInt()
+                    val num3 = in3.text.toString().toInt()
+        //            val num4 = in4.text.toString().toInt()
+        //            val num5 = in5.text.toString().toInt()
+                    //            val suma = num1 + num2 + num3
+        //            val resta = num1 - num2
+        //            val producto = num1 * num2
+        //            val division = num1 / num2
+        //          val cuadrado=num1*4
+        //            val promedio = suma / 3
+        //            val digitos = if (num1 < 10) 1  else 2
+        //            val mensaje = if (promedio>=7) "Promocionado"
+        //            else if (promedio>=4 && promedio<7) "Regular"
+        //            else "Reprobado"
+                    val menor = if (num1 < num2 && num1 < num3) num1 else if (num2 < num3) num2 else num3
+                    val mayor = if (num1 > num2 && num1 > num3) num1 else if (num2 > num3) num2 else num3
+                    resultado.text=("El mayor de la lista es $mayor y el menor $menor")
     }
     fun pr31() {
         println("Proyecto31:")

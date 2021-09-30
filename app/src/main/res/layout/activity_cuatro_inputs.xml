@@ -34,7 +34,7 @@
 
             android:ems="10"
             android:hint="@string/introduzca_el_primer_numero"
-            android:inputType="number"
+           android:inputType="textPersonName"
             android:minHeight="48dp" />
     </TableRow>
 
@@ -50,7 +50,7 @@
             android:layout_marginTop="20dp"
             android:ems="10"
             android:hint="@string/introduzca_el_segundo_numero"
-            android:inputType="number"
+           android:inputType="textPersonName"
             android:minHeight="48dp" />
     </TableRow>
     <TableRow
@@ -65,7 +65,7 @@
             android:layout_marginTop="20dp"
             android:ems="10"
             android:hint="@string/introduzca_el_tercer_numero"
-            android:inputType="number"
+           android:inputType="textPersonName"
             android:minHeight="48dp" />
     </TableRow>
     <TableRow
@@ -80,7 +80,7 @@
             android:layout_marginTop="20dp"
             android:ems="10"
             android:hint="@string/introduzca_el_cuarto_numero"
-            android:inputType="number"
+           android:inputType="textPersonName"
             android:minHeight="48dp" />
     </TableRow>
 
@@ -93,7 +93,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="10dp"
             android:text="@string/ejecuta" />
     </TableRow>
     <TableRow

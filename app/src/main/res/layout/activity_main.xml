@@ -33,11 +33,70 @@
 
             android:ems="10"
             android:hint="@string/introduzca_el_primer_numero"
-            android:inputType="numberDecimal"
+            android:inputType="textPersonName"
             android:minHeight="48dp" />
     </TableRow>
 
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
+        <EditText
+            android:id="@+id/in2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/introduzca_el_segundo_numero"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/in3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/introduzca_el_tercer_numero"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/in4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/introduzca_el_cuarto_numero"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/in5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/introduzca_el_quinto_numero"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+    </TableRow>
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
@@ -47,7 +106,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="10dp"
             android:text="@string/ejecuta" />
     </TableRow>
     <TableRow
