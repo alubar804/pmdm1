@@ -278,18 +278,7 @@ val num1 = in1.text.toString().toInt()
                     val num2 = in2.text.toString().toDouble()
                     val num3 = in3.text.toString().toDouble()
                     var pow = num1.pow(3)
-        //            val num4 = in4.text.toString().toInt()
-        //          val num5 = in5.text.toString().toInt()
-        //            val suma = num1 + num2 + num3
-        //            val resta = num1 - num2
-        //            val producto = num1 * num2
-        //            val division = num1 / num2
-        //          val cuadrado=num1*4
-        //            val promedio = suma / 3
-        //            val digitos = if (num1 < 10) 1  else 2
-        //            val mensaje = if (promedio>=7) "Promocionado"
-        //            else if (promedio>=4 && promedio<7) "Regular"
-        //            else "Reprobado"
+
                     if (num1 == num2  && num2 == num3 )
 
                         resultado.text="el cubo es igual a $pow"
@@ -299,18 +288,7 @@ val num1 = in1.text.toString().toInt()
                   val num2 = in2.text.toString().toDouble()
                   val num3 = in3.text.toString().toDouble()
                   var pow = num1.pow(3)
-      //            val num4 = in4.text.toString().toInt()
-      //          val num5 = in5.text.toString().toInt()
-      //            val suma = num1 + num2 + num3
-      //            val resta = num1 - num2
-      //            val producto = num1 * num2
-      //            val division = num1 / num2
-      //          val cuadrado=num1*4
-      //            val promedio = suma / 3
-      //            val digitos = if (num1 < 10) 1  else 2
-      //            val mensaje = if (promedio>=7) "Promocionado"
-      //            else if (promedio>=4 && promedio<7) "Regular"
-      //            else "Reprobado"
+
                   if (num1 <10 && num2<10  &&  num3<10)
 
                       resultado.text="todos son menores a 10"
@@ -325,16 +303,7 @@ val num1 = in1.text.toString().toInt()
     fun pr29() {
                     val num1 = in1.text.toString().toInt()
                     val num2 = in2.text.toString().toInt()
-        //           val num3 = in3.text.toString().toInt()
-        //            val num4 = in4.text.toString().toInt()
-        //            val num5 = in5.text.toString().toInt()
-        //            val suma = num1 + num2 + num3
-        //            val resta = num1 - num2
-        //            val producto = num1 * num2
-        //            val division = num1 / num2
-        //          val cuadrado=num1*4
-        //            val promedio = suma / 3
-        //            val digitos = if (num1 < 10) 1  else 2
+
 
                     if (num1 >0 && num2 >0)
                         resultado.text="esta en el primer cuadrante"
@@ -352,18 +321,7 @@ val num1 = in1.text.toString().toInt()
          val num1 = in1.text.toString().toInt()
                     val num2 = in2.text.toString().toInt()
                     val num3 = in3.text.toString().toInt()
-        //            val num4 = in4.text.toString().toInt()
-        //            val num5 = in5.text.toString().toInt()
-                    //            val suma = num1 + num2 + num3
-        //            val resta = num1 - num2
-        //            val producto = num1 * num2
-        //            val division = num1 / num2
-        //          val cuadrado=num1*4
-        //            val promedio = suma / 3
-        //            val digitos = if (num1 < 10) 1  else 2
-        //            val mensaje = if (promedio>=7) "Promocionado"
-        //            else if (promedio>=4 && promedio<7) "Regular"
-        //            else "Reprobado"
+
                     val menor = if (num1 < num2 && num1 < num3) num1 else if (num2 < num3) num2 else num3
                     val mayor = if (num1 > num2 && num1 > num3) num1 else if (num2 > num3) num2 else num3
                     resultado.text=("El mayor de la lista es $mayor y el menor $menor")
@@ -379,21 +337,7 @@ val num1 = in1.text.toString().toInt()
     }
     fun pr32() {
                val num1 = in1.text.toString().toInt()
-       //            val num2 = in2.text.toString().toInt()
-       //            val num3 = in3.text.toString().toInt()
-       //            val num4 = in4.text.toString().toInt()
-       //            val num5 = in5.text.toString().toInt()
-                   //            val suma = num1 + num2 + num3
-       //            val resta = num1 - num2
-       //            val producto = num1 * num2
-       //            val division = num1 / num2
-       //          val cuadrado=num1*4
-       //            val promedio = suma / 3
-       //            val digitos = if (num1 < 10) 1  else 2
-       //            val mensaje = if (promedio>=7) "Promocionado"
-       //            else if (promedio>=4 && promedio<7) "Regular"
-       //            else "Reprobado"
-                   var x = 1
+                var x = 1
                    var string =""
                    while (x <= num1) {
                        string+= "$x\n"
@@ -405,15 +349,7 @@ val num1 = in1.text.toString().toInt()
                   val num1 = in1.text.toString().toInt()
                   val num2 = in2.text.toString().toInt()
                   val num3 = in3.text.toString().toInt()
-      //            val num4 = in4.text.toString().toInt()
-      //            val num5 = in5.text.toString().toInt()
-                  //            val suma = num1 + num2 + num3
-      //            val resta = num1 - num2
-      //            val producto = num1 * num2
-      //            val division = num1 / num2
-      //          val cuadrado=num1*4
-      //            val promedio = suma / 3
-                  var x = 1
+                     var x = 1
                   var string =""
                   var suma =0
                   while (x <= 10) {
@@ -428,15 +364,6 @@ val num1 = in1.text.toString().toInt()
     fun pr34() {
     val num1 = in1.text.toString().toInt()
                             val num2 = in2.text.toString().toInt()
-                //            val num3 = in3.text.toString().toInt()
-                //            val num4 = in4.text.toString().toInt()
-                //            val num5 = in5.text.toString().toInt()
-                //            var arrayList =  intArrayOf(num1,num2,num3)
-                //            val resta = num1 - num2
-                //            val producto = num1 * num2
-                //            val division = num1 / num2
-                //          val cuadrado=num1*4
-                //            val promedio = suma / 3
                             var x = 1
                             var cantidad = 0
                             while (x <= num1) {
@@ -451,15 +378,8 @@ val num1 = in1.text.toString().toInt()
                  val num1 = in1.text.toString().toInt()
                  val num2 = in2.text.toString().toInt()
                  val num3 = in3.text.toString().toInt()
-                 //            val num4 = in4.text.toString().toInt()
-                 //            val num5 = in5.text.toString().toInt()
                  var arrayList =  intArrayOf(num1,num2,num3)
-                 //            val resta = num1 - num2
-                 //            val producto = num1 * num2
-                 //            val division = num1 / num2
-                 //          val cuadrado=num1*4
-                 //            val promedio = suma / 3
-                 var x = 0
+                   var x = 0
                  var cantidad = 0
                  while (x < arrayList.size) {
                      if (arrayList[x]>=7)
@@ -472,14 +392,8 @@ val num1 = in1.text.toString().toInt()
                    val num1 = in1.text.toString().toInt()
                    val num2 = in2.text.toString().toInt()
                    val num3 = in3.text.toString().toInt()
-                   //            val num4 = in4.text.toString().toInt()
-                   //            val num5 = in5.text.toString().toInt()
-                   val arrayListo =  arrayOf<Int>(num1,num2,num3)
-                   //            val resta = num1 - num2
-                   //            val producto = num1 * num2
-                   //            val division = num1 / num2
-                   //          val cuadrado=num1*4
-                   //            val promedio = suma / 3
+                    val arrayListo =  arrayOf<Int>(num1,num2,num3)
+
                    var x = 0
                    var cantidad = 0
                    while (x < arrayListo.size) {
@@ -494,13 +408,8 @@ val num1 = in1.text.toString().toInt()
                   val num2 = in2.text.toString().toInt()
                   val num3 = in3.text.toString().toInt()
                   val num4 = in4.text.toString().toInt()
-                  //            val num5 = in5.text.toString().toInt()
                   val arrayListo =  arrayOf<Int>(num1,num2,num3)
-                  //            val resta = num1 - num2
-                  //            val producto = num1 * num2
-                  //            val division = num1 / num2
-                  //          val cuadrado=num1*4
-                  //            val promedio = suma / 3
+
                   var palabras =""
                   var x = 0
                   var cantidad = 0
@@ -549,14 +458,9 @@ val num1 = in1.text.toString().toInt()
                     val num2 = in2.text.toString().toInt()
                     val num3 = in3.text.toString().toInt()
                     val num4 = in4.text.toString().toInt()
-                    //            val num5 = in5.text.toString().toInt()
                     val arrayListo =  arrayOf<Int>(num1,num2)
                     val arrayListo2 =  arrayOf<Int>(num3,num4)
-                    //            val resta = num1 - num2
-                    //            val producto = num1 * num2
-                    //            val division = num1 / num2
-                    //          val cuadrado=num1*4
-                    //            val promedio = suma / 3
+
                     var palabras =""
                     var x = 0
                     var suma1 = 0
@@ -583,13 +487,8 @@ val num1 = in1.text.toString().toInt()
                     val num2 = in2.text.toString().toInt()
                     val num3 = in3.text.toString().toInt()
                     val num4 = in4.text.toString().toInt()
-                    //            val num5 = in5.text.toString().toInt()
                     val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
-                    //            val resta = num1 - num2
-                    //            val producto = num1 * num2
-                    //            val division = num1 / num2
-                    //          val cuadrado=num1*4
-                    //            val promedio = suma / 3
+
                     var palabras =""
                     var x = 0
                     var pares = 0
@@ -607,17 +506,7 @@ val num1 = in1.text.toString().toInt()
     }
     fun pr42() {
         val num1 = in1.text.toString().toInt()
-        //            val num2 = in2.text.toString().toInt()
-        //            val num3 = in3.text.toString().toInt()
-        //            val num4 = in4.text.toString().toInt()
-        //            //            val num5 = in5.text.toString().toInt()
-        //            val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
-                    //            val resta = num1 - num2
-                    //            val producto = num1 * num2
-                    //            val division = num1 / num2
-                    //          val cuadrado=num1*4
-                    //            val promedio = suma / 3
-                    var x =0
+                        var x =0
                     do {
                         //esto crea un bucle infinito y peta, no es traducible parece
                         x = num1
@@ -635,24 +524,133 @@ val num1 = in1.text.toString().toInt()
                     }while (x !=0)
     }
     fun pr43() {
-        println("Proyecto43:")
-        //
+                val num1 = in1.text.toString().toInt()
+                    val num2 = in2.text.toString().toInt()
+                    val num3 = in3.text.toString().toInt()
+                    val num4 = in4.text.toString().toInt()
+
+                    val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+                    var cant = 0
+                    var suma = 0
+                    var x=0
+                    do {
+
+                        if (arrayListo[x] != 0) {
+                            suma += arrayListo[x]
+                            cant++
+                        }
+                        x++
+                    } while (x<4&&arrayListo[x] != 0)
+                    if (cant != 0) {
+                        val promedio = suma / cant
+                        resultado.text =("El promedio de los valores ingresados es: $promedio")
+                    } else
+                        resultado.text =("No se ingresaron valores.")
+
     }
     fun pr44() {
-        println("Proyecto44:")
-        //
+                    val num1 = in1.text.toString().toDouble()
+                    val num2 = in2.text.toString().toDouble()
+                    val num3 = in3.text.toString().toDouble()
+                    val num4 = in4.text.toString().toDouble()
+        //            //            val num5 = in5.text.toString().toInt()
+                    val arrayListo =  arrayOf<Double>(num1,num2,num3,num4)
+                    //            val resta = num1 - num2
+                    //            val producto = num1 * num2
+                    //            val division = num1 / num2
+                    //          val cuadrado=num1*4
+                    //            val promedio = suma / 3
+                    var cant1 = 0
+                    var cant2 = 0
+                    var cant3 = 0
+
+                    var x=0
+
+                    do {
+
+                        if (arrayListo[x] > 10.2)
+                            cant1++
+                        else
+                            if (arrayListo[x] >= 9.8)
+                                cant2++
+                            else
+                                if (arrayListo[x] > 0)
+                                    cant3++
+                        x++
+                    } while(x<4&& arrayListo[x]!=0.0)
+                    val suma = cant1 + cant2 + cant3
+                    resultado.text =("Piezas aptas: $cant2 \n" +
+                            "Piezas con un peso superior a 10.2: $cant1 \n"+
+                            "Piezas con un peso inferior a 9.8: $cant3 \n"+
+                            "Cantidad total de piezas procesadas: $suma")
+
     }
     fun pr45() {
-        println("Proyecto45:")
-        //
+                    val num1 = in1.text.toString().toInt()
+                    val num2 = in2.text.toString().toInt()
+                    val num3 = in3.text.toString().toInt()
+                    val num4 = in4.text.toString().toInt()
+
+                    val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+                    var suma = 0
+
+                    var x=0
+
+                    do {
+
+
+                        if(suma!=9999){
+                            suma += arrayListo[x]
+
+                        }
+                        x++
+                    } while(x<4 && arrayListo[x]!=9999)
+                    if (suma==0)
+                        resultado.text =("El valor acumulado es:  $suma \n")+
+                                ("El valor acumulado es cero.")
+                    else
+                        if (suma>0)
+                            resultado.text =("El valor acumulado es:  $suma \n")+
+                                    ("El valor acumulado es positivo.")
+                        else
+                            resultado.text =("El valor acumulado es:  $suma \n")+
+                                    ("El valor acumulado es negativo")
+
+
     }
     fun pr46() {
-        println("Proyecto46:")
-        //
+                    val num1 = in1.text.toString().toInt()
+                    val num2 = in2.text.toString().toInt()
+                    val num3 = in3.text.toString().toInt()
+                    val num4 = in4.text.toString().toInt()
+
+                    val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+                    var suma = 0
+                    var palabras = ""
+                    var x=0
+
+                    do {
+
+                        if (arrayListo[x] > 0) {
+                            palabras +=("Saldo Acreedor.\n")
+                            suma += arrayListo[x]
+                        } else
+                        if (arrayListo[x] < 0)
+                            palabras +=("Saldo Deudor.\n")
+                        else
+                            palabras +=("Saldo Nulo.\n")
+
+
+                        x++
+                    } while(x<4)
+                    palabras +=("Total de saldos Acreedores: $suma")
+                    resultado.text =palabras
     }
     fun pr47() {
-        println("Proyecto47:")
-        //
+         var palabras =""
+                    for(i in 1..100)
+                        palabras+=("$i\n")
+                    resultado.text =palabras
     }
     fun pr48() {
         println("Proyecto48:")
