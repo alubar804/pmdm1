@@ -1226,20 +1226,144 @@ val num1 = in1.text.toString().toInt()
                     resultado.text =palabras
     }
     fun pr70() {
-        println("Proyecto70:")
-        //
+        presentacon()
+                    operacion()
+                            final()
+         fun presentacon(){
+                var palabras =""
+                palabras+=("Program that alllows for the input of two values.\n")
+                palabras+=("Calculates the sum of the two values\n")
+                palabras+=("Shows the value of the sum\n")
+                palabras+=("*******************************\n")
+                resultado.text =palabras
+            }
+            fun operacion(){
+                var palabras =resultado.text.toString()
+                val num1 = in1.text.toString().toInt()
+                val num2 = in2.text.toString().toInt()
+        //        val num3 = in3.text.toString().toInt()
+        //        val num4 = in4.text.toString().toInt()
+        //            //            val num5 = in5.text.toString().toInt()
+        //        val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+                val suma = num1+num2
+                palabras+="The value of the sum is $suma\n"
+                resultado.text =palabras
+            }
+            fun final(){
+                var palabras =resultado.text.toString()
+                palabras+=("*******************************\n")
+                palabras+=("Thanks for using this problem\n")
+                resultado.text =palabras
+            }
     }
     fun pr71() {
-        println("Proyecto71:")
-        //
+    //////// SE SUPONE QUE SEAN 5 SUMAS EN BUCLE /////
+         operacion()
+                    final()
+
+
+
+
+                }
+            }
+
+
+            fun operacion(){
+                var palabras =resultado.text.toString()
+                val num1 = in1.text.toString().toInt()
+                val num2 = in2.text.toString().toInt()
+        //        val num3 = in3.text.toString().toInt()
+        //        val num4 = in4.text.toString().toInt()
+        //            //            val num5 = in5.text.toString().toInt()
+        //        val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+                val suma = num1+num2
+                palabras+="The value of the sum is $suma\n"
+                resultado.text =palabras
+            }
+            fun final(){
+                var palabras =resultado.text.toString()
+                palabras+=("*******************************\n")
+
+                resultado.text =palabras
+            }
     }
     fun pr72() {
-        println("Proyecto72:")
-        //
+        operacion1()
+                   separador()
+                   operacion2()
+
+
+
+
+
+               }
+           }
+
+
+           fun operacion1(){
+               var palabras =resultado.text.toString()
+               val num1 = in1.text.toString().toInt()
+       //        val num2 = in2.text.toString().toInt()
+       //        val num3 = in3.text.toString().toInt()
+       //        val num4 = in4.text.toString().toInt()
+       //            //            val num5 = in5.text.toString().toInt()
+       //        val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+               val square = num1*num1
+               palabras+="The square of $num1 is $square\n"
+               resultado.text =palabras
+           }
+           fun operacion2(){
+               var palabras =resultado.text.toString()
+       //        val num1 = in1.text.toString().toInt()
+               val num2 = in2.text.toString().toInt()
+               val num3 = in3.text.toString().toInt()
+       //        val num4 = in4.text.toString().toInt()
+       //            //            val num5 = in5.text.toString().toInt()
+       //        val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+               val suma = num3+num2
+               palabras+="The value of the sum of $num2 and $num3 is $suma\n"
+               resultado.text =palabras
+           }
+           fun separador(){
+               var palabras =resultado.text.toString()
+               palabras+=("*******************************\n")
+
+               resultado.text =palabras
+           }
     }
     fun pr73() {
-        println("Proyecto73:")
-        //
+           operacion1()
+                    separador()
+                    operacion1()
+
+
+
+
+
+                }
+            }
+
+
+            fun operacion1(){
+                var palabras =resultado.text.toString()
+                val num1 = in1.text.toString().toInt()
+                val num2 = in2.text.toString().toInt()
+                val num3 = in3.text.toString().toInt()
+        //        val num4 = in4.text.toString().toInt()
+        //            //            val num5 = in5.text.toString().toInt()
+        //        val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+
+                val menor = if (num1 < num2 && num1 < num3) num1 else if (num2 < num3) num2 else num3
+                palabras+="The smallest number of inputed ones is $menor\n"
+                resultado.text =palabras
+            }
+
+            fun separador(){
+                var palabras =resultado.text.toString()
+                palabras+=("*******************************\n")
+
+                resultado.text =palabras
+            }
     }
     fun pr74() {
         println("Proyecto74:")
