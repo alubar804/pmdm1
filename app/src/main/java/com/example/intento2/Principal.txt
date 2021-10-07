@@ -653,92 +653,577 @@ val num1 = in1.text.toString().toInt()
                     resultado.text =palabras
     }
     fun pr48() {
-        println("Proyecto48:")
-        //
+        val num1 = in1.text.toString().toInt()
+                    val num2 = in2.text.toString().toInt()
+                    val num3 = in3.text.toString().toInt()
+                    val num4 = in4.text.toString().toInt()
+                    //            val num5 = in5.text.toString().toInt()
+                    val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+                    var x = 0
+                    var cantidad = 0
+
+
+                    for(i in 1..arrayListo.size)
+                        cantidad = cantidad +arrayListo[x]
+                    val promedio = cantidad/arrayListo.size
+
+                    resultado.text =("La suma de los valores ingresados es $cantidad ")+
+                            ("Su promedio es $promedio")
     }
     fun pr49() {
-        println("Proyecto49:")
-        //
+               val num1 = in1.text.toString().toInt()
+                    val num2 = in2.text.toString().toInt()
+                    val num3 = in3.text.toString().toInt()
+                    val num4 = in4.text.toString().toInt()
+                    //            val num5 = in5.text.toString().toInt()
+                    val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+                    var x = 0
+                    var cantidad = 0
+                    var palabras =""
+                    var aprobados = 0
+                    var reprobados = 0
+
+
+
+
+                    for(i in arrayListo)
+                        if (i >= 7)
+                            aprobados++
+                        else
+                            reprobados++
+
+                    palabras=("Cantidad de alumnos con notas mayores o iguales a 7: $aprobados\n")
+                    palabras+=("Cantidad de alumnos con notas menores a 7: $reprobados")
+                    resultado.text =palabras
     }
     fun pr50() {
-        println("Proyecto50:")
-        //
+        var palabras =""
+
+                   var mult3 = 0
+                   var mult5 = 0
+                   var mult9 = 0
+                   for(i in 1..10000) {
+                       if (i % 3 == 0)
+                           mult3++
+                       if (i % 5 == 0)
+                           mult5++
+                       if (i % 8 == 0)
+                           mult9++
+                   }
+                   palabras+=("Cantidad de múltiplos de 3: $mult3\n")
+                   palabras+=("Cantidad de múltiplos de 5: $mult5\n")
+                   palabras+=("Cantidad de múltiplos de 9: $mult9")
+
+
+
+       //            for(i in arrayListo)
+
+
+
+                   resultado.text =palabras
     }
     fun pr51() {
-        println("Proyecto51:")
-        //
+                    val num1 = in1.text.toString().toInt()
+                    val num2 = in2.text.toString().toInt()
+                    val num3 = in3.text.toString().toInt()
+                    val num4 = in4.text.toString().toInt()
+        //            //            val num5 = in5.text.toString().toInt()
+                    val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+                    var x = 0
+                    var cantidad = 4
+                    var palabras =""
+
+                    var cant = 0
+                    for(i in arrayListo) {
+                        if (i % 2 == 0) {
+                            cant++
+                        }
+                    }
+                    palabras=("Cantidad de pares: $cant")
+                    resultado.text =palabras
     }
     fun pr52() {
-        println("Proyecto52:")
-        //
+         val num1 = in1.text.toString().toInt()
+                    val num2 = in2.text.toString().toInt()
+                    val num3 = in3.text.toString().toInt()
+                    val num4 = in4.text.toString().toInt()
+        //            //            val num5 = in5.text.toString().toInt()
+                    val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+
+                    var cantidad = 0
+                    var palabras =""
+
+
+                    for(i in arrayListo) {
+                        print("Ingrese el valor de la base:")
+                        val base = i
+                        print("Ingrese el valor de la altura:")
+                        val altura = 6
+                        val superficie = base * altura / 2
+                        println("La superficie es de $superficie")
+                        if (superficie > 12)
+                            cantidad++
+                    }
+                    palabras=("La cantidad de triángulos con superficie superior a 12 son: $cantidad")
+
+                    resultado.text =palabras
     }
     fun pr53() {
-        println("Proyecto53:")
-        //
+       val num1 = in1.text.toString().toInt()
+                   val num2 = in2.text.toString().toInt()
+                   val num3 = in3.text.toString().toInt()
+                   val num4 = in4.text.toString().toInt()
+       //            //            val num5 = in5.text.toString().toInt()
+                   val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+
+                   var cantidad = 0
+                   var palabras =""
+                   var suma =0
+                   for(i in arrayListo) {
+                       suma += i
+                   }
+                   palabras=("La suma de los últimos 4 valores es: $suma");
+                   resultado.text =palabras
+
     }
     fun pr54() {
-        println("Proyecto54:")
-        //
+         var cantidad = 0
+                    var palabras =""
+                    for(tabla5 in 5..50 step 5)
+                        palabras+=("$tabla5 \n")
+
+                    resultado.text =palabras
     }
     fun pr55() {
-        println("Proyecto55:")
-        //
+         val num1 = in1.text.toString().toInt()
+        //            val num2 = in2.text.toString().toInt()
+        //            val num3 = in3.text.toString().toInt()
+        //            val num4 = in4.text.toString().toInt()
+        //            //            val num5 = in5.text.toString().toInt()
+        //            val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+
+                    var cantidad = 0
+                    var palabras =""
+                    for(i in num1..num1*12 step num1)
+                        palabras+=("$i \n")
+
+
+                    resultado.text =palabras
     }
     fun pr56() {
-        println("Proyecto56:")
-        //
+                    val num1 = in1.text.toString().toInt()
+                    val num2 = in2.text.toString().toInt()
+                    val num3 = in3.text.toString().toInt()
+                    val num4 = in4.text.toString().toInt()
+        //            //            val num5 = in5.text.toString().toInt()
+                    val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+
+                    var cantidad = 0
+                    var palabras =""
+                    var cant1 = 0
+                    var cant2 = 0
+                    var cant3 = 0
+
+
+                    for(i in 0..3) {
+                        print("Ingrese lado 1:")
+                        val lado1 = arrayListo[i]
+                        print("Ingrese lado 2:")
+                        val lado2 = 6
+                        print("Ingrese lado 3:")
+                        val lado3 = 7
+                        if (lado1 == lado2 && lado1 == lado3) {
+                            palabras+=("Es un triángulo equilatero.\n")
+                            cant1++
+                        } else
+                            if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
+                                palabras+=("Es un triángulo isósceles.\n")
+                                cant2++
+                            } else {
+                                palabras+=("Es un triángulo escaleno.\n")
+                                cant3++
+                            }
+                    }
+
+                    palabras+=("Cantidad de triángulos equilateros: $cant1\n")
+                    palabras+=("Cantidad de triángulos isósceles: $cant2\n")
+                    palabras+=("Cantidad de triángulos escalenos: $cant3")
+
+
+
+                    resultado.text =palabras
     }
     fun pr57() {
-        println("Proyecto57:")
-        //
+                    val num1 = in1.text.toString().toInt()
+                    val num2 = in2.text.toString().toInt()
+                    val num3 = in3.text.toString().toInt()
+                    val num4 = in4.text.toString().toInt()
+        //            //            val num5 = in5.text.toString().toInt()
+                    val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+
+                    var cantidad = 0
+                    var palabras =""
+
+                    var cant1 = 0
+                    var cant2 = 0
+                    var cant3 = 0
+                    var cant4 = 0
+
+                    for(i in 0..3) {
+
+                        val x = arrayListo[i]
+                        print("Ingrese coordenada y:")
+                        val y = 5
+                        if (x > 0 && y > 0)
+                            cant1++
+                        else
+                            if (x < 0 && y > 0)
+                                cant2++;
+                            else
+                                if (x < 0 && y < 0)
+                                    cant3++
+                                else
+                                    if (x > 0 && y < 0)
+                                        cant4++
+                    }
+                    palabras+=("Cantidad de puntos en el primer cuadrante: $cant1\n")
+                    palabras+=("Cantidad de puntos en el segundo cuadrante: $cant2\n")
+                    palabras+=("Cantidad de puntos en el tercer cuadrante: $cant3\n")
+                    palabras+=("Cantidad de puntos en el cuarto cuadrante: $cant4\n")
+
+
+
+
+                    resultado.text =palabras
     }
     fun pr58() {
-        println("Proyecto58:")
-        //
+                    val num1 = in1.text.toString().toInt()
+                    val num2 = in2.text.toString().toInt()
+                    val num3 = in3.text.toString().toInt()
+                    val num4 = in4.text.toString().toInt()
+        //            //            val num5 = in5.text.toString().toInt()
+                    val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+
+
+                    var palabras =""
+
+
+                    var negativos = 0
+                    var positivos = 0
+                    var mult15 = 0
+                    var sumapares = 0
+                    for(i in 0..3) {
+
+                        val valor = arrayListo[i]
+                        if (valor < 0)
+                            negativos++
+                        else
+                            if (valor > 0)
+                                positivos++
+                        if ( valor % 15 == 0)
+                            mult15++
+                        if (valor % 2 == 0)
+                            sumapares+=valor
+                    }
+                    palabras+=("Cantidad de valores negativos: $negativos\n")
+                    palabras+=("Cantidad de valores positivos: $positivos\n")
+                    palabras+=("Cantidad de valores múltiplos de 15: $mult15\n")
+                    palabras+=("Suma de los valores pares: $sumapares\n")
+
+
+
+
+
+                    resultado.text =palabras
     }
     fun pr59() {
-        println("Proyecto59:")
-        //
+        val num1 = in1.text.toString().toInt()
+                    val num2 = in2.text.toString().toInt()
+        //            val num3 = in3.text.toString().toInt()
+        //            val num4 = in4.text.toString().toInt()
+        //            //            val num5 = in5.text.toString().toInt()
+
+
+
+                    var palabras =""
+
+                    val x = num1
+                    val y = num2
+                    when {
+                        x > 0 && y > 0 ->  palabras+=("Primer cuadrate\n")
+                        x < 0 && y > 0 ->  palabras+=("Segundo cuadrante\n")
+                        x < 0 && y < 0 ->  palabras+=("Tercer cuadrante\n")
+                        x > 0 && y < 0 ->  palabras+=("Cuarto cuadrante\n")
+                        else ->  palabras+=("El punto se encuentra en un eje\n")
+                    }
+
+
+                    resultado.text =palabras
+
     }
     fun pr60() {
-        println("Proyecto60:")
-        //
+       val num1 = in1.text.toString().toInt()
+                   val num2 = in2.text.toString().toInt()
+                   val num3 = in3.text.toString().toInt()
+       //            val num4 = in4.text.toString().toInt()
+       //            //            val num5 = in5.text.toString().toInt()
+
+                   var palabras =""
+
+
+                   val promedio = (num1 + num2 + num3) / 3
+                   when {
+                       promedio >= 7 ->  palabras+=("Promocionado")
+                       promedio >= 4 ->  palabras+=("Regular")
+                       else ->  palabras+=("Libre")
+                   }
+
+
+
+
+                   resultado.text =palabras
     }
     fun pr61() {
-        println("Proyecto61:")
-        //
+val num1 = in1.text.toString().toInt()
+            val num2 = in2.text.toString().toInt()
+            val num3 = in3.text.toString().toInt()
+            val num4 = in4.text.toString().toInt()
+//            //            val num5 = in5.text.toString().toInt()
+            val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+            var palabras =""
+           var x = 0
+
+            val promedio = (num1 + num2 + num3) / 3
+            var cant1 = 0
+            var cant2 = 0
+            var cant3 = 0
+            do {
+                var peso = arrayListo[x]
+
+                when {
+                    peso > 10.2 -> cant1++
+                    peso >= 9.8 -> cant2++
+                    peso > 0 -> cant3++
+                }
+                x++
+            } while(x <arrayListo.size)
+            palabras+=("Piezas aptas: $cant2\n")
+            palabras+=("Piezas con un peso superior a 10.2: $cant1\n")
+            palabras+=("Piezas con un peso inferior a 9.8: $cant3\n");
+            val suma = cant1 + cant2 + cant3
+            palabras+=("Cantidad total de piezas procesadas: $suma\n")
+
+
+
+
+            resultado.text =palabras
     }
     fun pr62() {
-        println("Proyecto62:")
-        //
+                    val num1 = in1.text.toString().toInt()
+                    val num2 = in2.text.toString().toInt()
+                    val num3 = in3.text.toString().toInt()
+                    val num4 = in4.text.toString().toInt()
+        //            //            val num5 = in5.text.toString().toInt()
+                    val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+                    var palabras =""
+
+                    var total = 0
+                    for(i in 0..3) {
+
+                        val sueldo =  arrayListo[i]
+                        total += when {
+                            sueldo > 5000 -> {
+                                palabras+=("Sueldo alto\n")
+                                sueldo
+                            }
+                            sueldo > 2000 -> {
+                                palabras+=("Sueldo medio\n")
+                                0
+                            }
+                            else -> {
+                                palabras+=("Sueldo bajo\n")
+                                0
+                            }
+                        }
+                    }
+                    palabras+=("Gastos totales en sueldos altos: $total\n")
+
+
+
+                    resultado.text =palabras
     }
     fun pr63() {
-        println("Proyecto63:")
-        //
+                val num1 = in1.text.toString().toInt()
+        //            val num2 = in2.text.toString().toInt()
+        //            val num3 = in3.text.toString().toInt()
+        //            val num4 = in4.text.toString().toInt()
+        //            //            val num5 = in5.text.toString().toInt()
+        //            val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+                    var palabras =""
+                    when {
+                        num1 == 0 ->  palabras+=("the inputed value is zero")
+                        num1 > 0 ->  palabras+=("the inputed value is positive")
+                        else ->  palabras+=("the inputed value is negative")
+                    }
+
+                    resultado.text =palabras
     }
     fun pr64() {
-        println("Proyecto64:")
-        //
+                   val num1 = in1.text.toString().toInt()
+                   val num2 = in2.text.toString().toInt()
+                   val num3 = in3.text.toString().toInt()
+                   val num4 = in4.text.toString().toInt()
+       //            //            val num5 = in5.text.toString().toInt()
+                   val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+                   var palabras =""
+                   var suma = 0
+                   for(i in arrayListo) {
+                       val valor1 = i
+                       val valor2 = 5
+                       val valor3 = 10
+                       suma += when {
+                           valor1 > valor2 && valor1 > valor3 -> valor1
+                           valor2 > valor3 -> valor2
+                           else -> valor3
+                       }
+                   }
+                   palabras=("The accumulated value of the sum of the biggest values of the 3 values list is: $suma")
+
+                   resultado.text =palabras
+
     }
     fun pr65() {
-        println("Proyecto65:")
-        //
+             val num1 = in1.text.toString().toInt()
+                   val num2 = in2.text.toString().toInt()
+                   val num3 = in3.text.toString().toInt()
+                   val num4 = in4.text.toString().toInt()
+       //            //            val num5 = in5.text.toString().toInt()
+                   val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+                   var palabras =""
+                   var cant1 = 0
+                   var cant2 = 0
+                   var cant3 = 0
+
+
+                   for(i in arrayListo) {
+
+                       val lado1 = i
+
+                       val lado2 = 10
+
+                       val lado3 = 5
+                       when {
+                           lado1 == lado2 && lado1 == lado3 -> {
+                               palabras+=("It is a equilateral triangle.\n")
+                               cant1++
+                           }
+                           lado1 == lado2 || lado1 == lado3 || lado2 == lado3 -> {
+                               palabras+=("It is a isosceles triangle.\n")
+                               cant2++
+                           }
+                           else -> {
+                               palabras+=("It is a scalene triangle.\n")
+                               cant3++
+                           }
+                       }
+                   }
+                   palabras+=("Amount of equilateral trinagles : $cant1\n")
+                   palabras+=("Amount of isosceles trinagles: $cant2\n")
+                   palabras+=("Amount of scalene trinagles: $cant3\n")
+
+
+                   resultado.text =palabras
+
     }
     fun pr66() {
-        println("Proyecto66:")
-        //
+                   val num1 = in1.text.toString().toInt()
+        //            val num2 = in2.text.toString().toInt()
+        //            val num3 = in3.text.toString().toInt()
+        //            val num4 = in4.text.toString().toInt()
+        //            //            val num5 = in5.text.toString().toInt()
+
+                    var palabras =""
+
+                    when(num1){
+                        1 -> palabras="one"
+                        2 -> palabras="two"
+                        3 -> palabras="tree"
+                        4 -> palabras="four"
+                        5 -> palabras="five"
+
+                    }
+
+                    resultado.text =palabras
+
     }
     fun pr67() {
-        println("Proyecto67:")
-        //
+                   val num1 = in1.text.toString().toInt()
+       //            val num2 = in2.text.toString().toInt()
+       //            val num3 = in3.text.toString().toInt()
+       //            val num4 = in4.text.toString().toInt()
+       //            //            val num5 = in5.text.toString().toInt()
+
+                   var palabras =""
+
+                   when(num1){
+                       in 0..9 -> palabras = "the numeber $num1 has 1 digit"
+                       in 10..99 -> palabras = "the numeber $num1 has 2 digits"
+                       in 100..999 -> palabras = "the numeber $num1 has 3 digits"
+                       in 1000..9999-> palabras = "the numeber $num1 has 4 digits"
+                       in 10000..99999 -> palabras = "the numeber $num1 has 5 digits"
+                       else -> palabras= "the number $num1 is not in the allowed range"
+
+                   }
+
+                   resultado.text =palabras
     }
     fun pr68() {
-        println("Proyecto68:")
-        //
+         val num1 = in1.text.toString().toInt()
+                    val num2 = in2.text.toString().toInt()
+                    val num3 = in3.text.toString().toInt()
+                    val num4 = in4.text.toString().toInt()
+        //            //            val num5 = in5.text.toString().toInt()
+                    val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+                    var palabras =""
+                    var cont0 =0
+                    var cont5 =0
+                    var cont1 =0
+                    var cont10 =0
+                    for (i in arrayListo)
+                        when(i){
+                            0 -> cont0++
+                            1 -> cont1++
+                            5 -> cont5++
+                            10-> cont10++
+
+                        }
+                    palabras= "there is:\n $cont0 zeros\n $cont1 ones\n $cont5 fives\n $cont10 tens"
+                    resultado.text =palabras
+
     }
     fun pr69() {
-        println("Proyecto69:")
-        //
+         val num1 = in1.text.toString().toInt()
+                    val num2 = in2.text.toString().toInt()
+                    val num3 = in3.text.toString().toInt()
+                    val num4 = in4.text.toString().toInt()
+        //            //            val num5 = in5.text.toString().toInt()
+                    val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+                    var palabras =""
+                    var cont0 =0
+                    var cont2 =0
+                    var cont1 =0
+                    var contMas=0
+                    for (i in arrayListo)
+                        when(i){
+                            0 -> cont0++
+                            1 -> cont1++
+                            2 -> cont2++
+                            else -> contMas++
+
+                        }
+                    palabras= "the families have this many children:\n $cont0 zero children \n $cont1 one child\n" +
+                            " $cont2 two children\n $contMas have more than two"
+                    resultado.text =palabras
     }
     fun pr70() {
         println("Proyecto70:")
