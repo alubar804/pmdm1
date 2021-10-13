@@ -1366,28 +1366,263 @@ val num1 = in1.text.toString().toInt()
             }
     }
     fun pr74() {
-        println("Proyecto74:")
-        //
+        button.setOnClickListener {
+                    mensaje("This program calculates the sum of 2 inputs")
+                    operacion1()
+                    mensaje("End of the program, thanks for using it")
+
+
+
+
+
+                }
+            }
+
+
+            fun operacion1(){
+                var palabras =resultado.text.toString()
+                val num1 = in1.text.toString().toInt()
+                val num2 = in2.text.toString().toInt()
+        //        val num3 = in3.text.toString().toInt()
+        //        val num4 = in4.text.toString().toInt()
+        //            //            val num5 = in5.text.toString().toInt()
+        //        val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+
+                val suma = num1+num2
+                palabras+="The sum of $num1 and $num2 equals $suma\n"
+                resultado.text =palabras
+            }
+            fun mensaje(mensaje:String){
+                var palabras =resultado.text.toString()
+                palabras+=("*******************************\n")
+                palabras+= "$mensaje \n"
+                palabras+=("*******************************\n")
+                resultado.text =palabras
+            }
+            fun separador(){
+                var palabras =resultado.text.toString()
+                palabras+=("*******************************\n")
+
+                resultado.text =palabras
+            }
     }
     fun pr75() {
-        println("Proyecto75:")
-        //
+         button.setOnClickListener {
+                    val num1 = in1.text.toString().toInt()
+                    val num2 = in2.text.toString().toInt()
+                val num3 = in3.text.toString().toInt()
+        //        val num4 = in4.text.toString().toInt()
+        //            //            val num5 = in5.text.toString().toInt()
+                    mensaje("This program shows the biggest of 3 inputs")
+                    operacion1(num1,num2,num3)
+                    mensaje("End of the program, thanks for using it")
+
+
+
+
+
+                }
+            }
+
+
+            fun operacion1(num1:Int, num2:Int, num3:Int){
+                var palabras =resultado.text.toString()
+
+        //        val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+
+                val mayor = if (num1 > num2 && num1 > num3) num1 else if (num2 > num3) num2 else num3
+                palabras+="The biggest out of $num1 , $num2 and $num3 is: $mayor\n"
+                resultado.text =palabras
+            }
+            fun mensaje(mensaje:String){
+                var palabras =resultado.text.toString()
+                palabras+=("*******************************\n")
+                palabras+= "$mensaje \n"
+                palabras+=("*******************************\n")
+                resultado.text =palabras
+            }
+            fun separador(){
+                var palabras =resultado.text.toString()
+                palabras+=("*******************************\n")
+
+                resultado.text =palabras
+            }
     }
     fun pr76() {
-        println("Proyecto76:")
-        //
+          val num1 = in1.text.toString().toInt()
+                    val num2 = in2.text.toString()
+        //            val num3 = in3.text.toString().toInt()
+        //        val num4 = in4.text.toString().toInt()
+        //            //            val num5 = in5.text.toString().toInt()
+
+                    when(num2){
+                        "perimetro"->perimetro(num1)
+                        "superficie"->superficie(num1)
+                    }
+                    mensaje("End of the program, thanks for using it")
+
+
+
+
+
+                }
+            }
+
+
+            fun perimetro(num1:Int){
+                var palabras =resultado.text.toString()
+
+        //        val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+                val per=num1*4
+
+                palabras+="The perimeter of a square with a side of $num1 is $per \n"
+                resultado.text =palabras
+            }
+            fun superficie(num1:Int){
+                var palabras =resultado.text.toString()
+                val per=num1*num1
+
+                palabras+="The perimeter of a square with a side of $num1 is $per \n"
+                resultado.text =palabras
+            }
+            fun mensaje(mensaje:String){
+                var palabras =resultado.text.toString()
+                palabras+=("*******************************\n")
+                palabras+= "$mensaje \n"
+                palabras+=("*******************************\n")
+                resultado.text =palabras
+            }
     }
     fun pr77() {
-        println("Proyecto77:")
-        //
+        val num1 = in1.text.toString()
+                    val num2 = in2.text.toString()
+        //            val num3 = in3.text.toString().toInt()
+        //        val num4 = in4.text.toString().toInt()
+        //            //            val num5 = in5.text.toString().toInt()
+                    claves(num1,num2)
+
+                    mensaje("End of the program, thanks for using it")
+
+
+
+
+
+                }
+            }
+
+
+            fun claves(t1:String,t2:String){
+                var palabras =resultado.text.toString()
+                if(t1.equals(t2)){
+                    palabras+="the keys $t1 and $t2 are equal \n"
+                }else{
+                    palabras+="the keys $t1 and $t2 are NOT equal \n"
+                }
+        //        val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+
+
+
+                resultado.text =palabras
+            }
+
+            fun mensaje(mensaje:String){
+                var palabras =resultado.text.toString()
+                palabras+=("*******************************\n")
+                palabras+= "$mensaje \n"
+                palabras+=("*******************************\n")
+                resultado.text =palabras
+            }
     }
     fun pr78() {
-        println("Proyecto78:")
-        //
+         val num1 = in1.text.toString().toInt()
+                    val num2 = in2.text.toString().toInt()
+                    val num3 = in3.text.toString().toInt()
+        //        val num4 = in4.text.toString().toInt()
+        //            //            val num5 = in5.text.toString().toInt()
+                    mensaje("This program orders the inputs from biggest to smallest")
+                    mayorMenor(num1,num2, num3)
+
+                    mensaje("End of the program, thanks for using it")
+
+
+
+
+
+                }
+            }
+
+
+
+            fun mayorMenor(num1:Int,num2:Int,num3:Int) {
+                var palabras = resultado.text.toString()
+                when {
+                    num1 < num2 && num1 < num3 -> {
+                        if (num2 < num3)
+                            palabras +=("$num1 $num2 $num3 \n")
+                        else
+                            palabras +=("$num1 $num3 $num2 \n")
+                    }
+                    num2 < num3 -> {
+                        if (num1 < num3)
+                            palabras +=("$num2 $num1 $num3\n")
+                        else
+                            palabras +=("$num2 $num3 $num1\n")
+                    }
+                    else -> {
+                        if (num1 < num2)
+                            palabras +=("$num3 $num1 $num2\n")
+                        else
+                            palabras +=("$num3 $num2 $num1\n")
+                    }
+
+
+                }
+                resultado.text = palabras
+            }
+            fun mensaje(mensaje:String){
+                var palabras =resultado.text.toString()
+                palabras+=("*******************************\n")
+                palabras+= "$mensaje \n"
+                palabras+=("*******************************\n")
+                resultado.text =palabras
+            }
     }
     fun pr79() {
-        println("Proyecto79:")
-        //
+               button.setOnClickListener {
+                   val num1 = in1.text.toString().toInt()
+       //            val num2 = in2.text.toString().toInt()
+       //            val num3 = in3.text.toString().toInt()
+       //        val num4 = in4.text.toString().toInt()
+       //            //            val num5 = in5.text.toString().toInt()
+                   mensaje("This program returns the surface of a square with a side of $num1")
+                   var sup = superficie(num1)
+                   mensaje("The surface of the square is $sup")
+                   mensaje("End of the program, thanks for using it")
+
+
+
+
+
+               }
+           }
+
+
+
+           fun superficie(num1:Int) : Int{
+
+               val per=num1*num1
+
+              return per
+           }
+
+           fun mensaje(mensaje:String){
+               var palabras =resultado.text.toString()
+               palabras+=("*******************************\n")
+               palabras+= "$mensaje \n"
+               palabras+=("*******************************\n")
+               resultado.text =palabras
+           }
+
     }
     fun pr80() {
         println("Proyecto80:")
