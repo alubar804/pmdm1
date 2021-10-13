@@ -15,9 +15,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        enunciado.text = "Proyecto 80"
+        enunciado.text = "Proyecto 83"
 //        in1.isVisible= false
-//        in2.isVisible= false
+        in2.isVisible= false
         in3.isVisible= false
         in4.isVisible= false
         in5.isVisible= false
@@ -26,33 +26,31 @@ class MainActivity : AppCompatActivity() {
 
         button.setOnClickListener {
             val num1 = in1.text.toString().toInt()
-            val num2 = in2.text.toString().toInt()
-//            val num3 = in3.text.toString().toInt()
-//        val num4 = in4.text.toString().toInt()
-//            //            val num5 = in5.text.toString().toInt()
-            mensaje("This program returns the biggest out of two numbers")
-            var valor = operacion(num1,num2)
-            mensaje("The biggest number is $valor")
+//            val num2 = in2.text.toString().toInt()
+//                        val num3 = in3.text.toString().toInt()
+            //        val num4 = in4.text.toString().toInt()
+            //            //            val num5 = in5.text.toString().toInt()
+            mensaje("This program returns the average of tree numbers")
+
+            mensaje("the perimeter equals ${operacion(num1)} ")
             mensaje("End of the program, thanks for using it")
 
-
-
-
-
         }
     }
 
 
 
-    fun operacion(num1:Int,num2:Int) : Int{
-        if (num1>num2){
-            return num1
-        }else{
-            return num2
+
+
+        fun operacion(num1:Int) : Int{
+            val pro = (num1)*4
+            return pro
+
+
         }
 
 
-    }
+
 
     fun mensaje(mensaje:String){
         var palabras =resultado.text.toString()

@@ -1625,20 +1625,141 @@ val num1 = in1.text.toString().toInt()
 
     }
     fun pr80() {
-        println("Proyecto80:")
-        //
+                button.setOnClickListener {
+                    val num1 = in1.text.toString().toInt()
+                    val num2 = in2.text.toString().toInt()
+        //            val num3 = in3.text.toString().toInt()
+        //        val num4 = in4.text.toString().toInt()
+        //            //            val num5 = in5.text.toString().toInt()
+                    mensaje("This program returns the biggest out of two numbers")
+                    var valor = operacion(num1,num2)
+                    mensaje("The biggest number is $valor")
+                    mensaje("End of the program, thanks for using it")
+
+
+
+
+
+                }
+            }
+
+
+
+            fun operacion(num1:Int,num2:Int) : Int{
+                if (num1>num2){
+                    return num1
+                }else{
+                    return num2
+                }
+
+
+            }
+
+            fun mensaje(mensaje:String){
+                var palabras =resultado.text.toString()
+                palabras+=("*******************************\n")
+                palabras+= "$mensaje \n"
+                palabras+=("*******************************\n")
+                resultado.text =palabras
+            }
+
     }
     fun pr81() {
-        println("Proyecto81:")
-        //
+button.setOnClickListener {
+            val num1 = in1.text.toString()
+            val num2 = in2.text.toString()
+            //            val num3 = in3.text.toString().toInt()
+            //        val num4 = in4.text.toString().toInt()
+            //            //            val num5 = in5.text.toString().toInt()
+            mensaje("This program compares the letter \ncount of two words and returns the biggest")
+
+            if (operacion(num1)>operacion(num2)){
+                mensaje("The biggest letter count belongs to $num1")
+            }else  if (operacion(num1)<operacion(num2)){
+                mensaje("The biggest letter count belongs to $num2")
+            }else{
+                mensaje("The words $num1 and $num2 have the same letter count")
+            }
+            mensaje("End of the program, thanks for using it")
+
+        }
+    }
+
+
+
+
+
+        fun operacion(num1:String,) : Int{
+            return num1.length
+
+
+        }
+
     }
     fun pr82() {
-        println("Proyecto82:")
-        //
+
+        button.setOnClickListener {
+            val num1 = in1.text.toString().toInt()
+            val num2 = in2.text.toString().toInt()
+                        val num3 = in3.text.toString().toInt()
+            //        val num4 = in4.text.toString().toInt()
+            //            //            val num5 = in5.text.toString().toInt()
+            mensaje("This program returns the average of tree numbers")
+
+            mensaje("the average equals ${operacion(num1,num2,num3)} ")
+            mensaje("End of the program, thanks for using it")
+
+        }
+    }
+
+
+
+
+
+        fun operacion(num1:Int,num2:Int,num3:Int) : Int{
+            val pro = (num1+num2+num3)/3
+            return pro
+
+
+        }
+
+
+
+
+    fun mensaje(mensaje:String){
+        var palabras =resultado.text.toString()
+        palabras+=("*******************************\n")
+        palabras+= "$mensaje \n"
+        palabras+=("*******************************\n")
+        resultado.text =palabras
+    }
+
     }
     fun pr83() {
-        println("Proyecto83:")
-        //
+        utton.setOnClickListener {
+                    val num1 = in1.text.toString().toInt()
+        //            val num2 = in2.text.toString().toInt()
+        //                        val num3 = in3.text.toString().toInt()
+                    //        val num4 = in4.text.toString().toInt()
+                    //            //            val num5 = in5.text.toString().toInt()
+                    mensaje("This program returns the average of tree numbers")
+
+                    mensaje("the perimeter equals ${operacion(num1)} ")
+                    mensaje("End of the program, thanks for using it")
+
+                }
+            }
+
+
+
+
+
+                fun operacion(num1:Int) : Int{
+                    val pro = (num1)*4
+                    return pro
+
+
+                }
     }
     fun pr84() {
         println("Proyecto84:")
