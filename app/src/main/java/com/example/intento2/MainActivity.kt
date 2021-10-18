@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        enunciado.text = "Proyecto 101"
+        enunciado.text = "Proyecto 104"
         in1.isVisible = false
         in2.isVisible = false
         in3.isVisible = false
@@ -25,25 +25,28 @@ class MainActivity : AppCompatActivity() {
 //            val num3 = in3.text.toString().toFloat()
 //            val num4 = in4.text.toString().toFloat()
 //            val num5 = in5.text.toString().toFloat()
-            mensajeComplex("This program returns the first and last elements of an array")
+            mensajeComplex("")
 //            val arrayNumeros:FloatArray = FloatArray(5)
 //            arrayNumeros[0]=num1
 //            arrayNumeros[1]=num2
 //            arrayNumeros[2]=num3
 //            arrayNumeros[3]=num4
 //            arrayNumeros[4]=num5
-            val arrayNumeros= arrayOf<Int>(1,2,3,4,5,6,7,8,9,10)
-            mensajeArray(arrayNumeros)
+            val arrayNumeros= arrayOf<Int>(10,20,30,40)
+            val arrayNumeros2= arrayOf<Int>(70,80,90,100)
+            mensajeArray(arrayNumeros,arrayNumeros2)
         }
     }
-    fun mensajeArray(elarray: Array<Int>) {
+    fun mensajeArray(elarray: Array<Int>,elarray2: Array<Int>) {
         var palabras = resultado.text.toString()
+        val arraySuma= arrayOf<Int>()
+        for (i in elarray) {
+            arraySuma[i]=elarray[i]+elarray2[i]
+        }
 
-            palabras += "the first number is ${elarray[0]} \n"
-
-            palabras += "the last number is ${elarray.last()}\n"
-
-
+        for (j in arraySuma){
+            palabras+="$j\n"
+        }
         resultado.text = palabras
     }
     fun operacion() {

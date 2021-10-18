@@ -2268,12 +2268,72 @@ button.setOnClickListener {
             }
     }
     fun pr102() {
-        println("Proyecto102:")
-        //
+         button.setOnClickListener {
+        //            val num1 = in1.text.toString().toFloat()
+        //            val num2 = in2.text.toString().toFloat()
+        //            val num3 = in3.text.toString().toFloat()
+        //            val num4 = in4.text.toString().toFloat()
+        //            val num5 = in5.text.toString().toFloat()
+                    mensajeComplex("This program returns the first and last elements of an array")
+        //            val arrayNumeros:FloatArray = FloatArray(5)
+        //            arrayNumeros[0]=num1
+        //            arrayNumeros[1]=num2
+        //            arrayNumeros[2]=num3
+        //            arrayNumeros[3]=num4
+        //            arrayNumeros[4]=num5
+                    val arrayNumeros= arrayOf<Int>(1,2,3,4,5,6,7,8,9,10)
+                    mensajeArray(arrayNumeros)
+                }
+            }
+            fun mensajeArray(elarray: Array<Int>) {
+                var palabras = resultado.text.toString()
+                for (i in elarray)
+                    palabras += " $i \n"
+
+
+
+
+                resultado.text = palabras
+            }
     }
     fun pr103() {
-        println("Proyecto103:")
-        //
+         button.setOnClickListener {
+        //            val num1 = in1.text.toString().toFloat()
+        //            val num2 = in2.text.toString().toFloat()
+        //            val num3 = in3.text.toString().toFloat()
+        //            val num4 = in4.text.toString().toFloat()
+        //            val num5 = in5.text.toString().toFloat()
+                    mensajeComplex("")
+        //            val arrayNumeros:FloatArray = FloatArray(5)
+        //            arrayNumeros[0]=num1
+        //            arrayNumeros[1]=num2
+        //            arrayNumeros[2]=num3
+        //            arrayNumeros[3]=num4
+        //            arrayNumeros[4]=num5
+                    val arrayNumeros= arrayOf<Int>(10,20,30,40,50,60,70,80,90,100)
+                    mensajeArray(arrayNumeros)
+                }
+            }
+            fun mensajeArray(elarray: Array<Int>) {
+                var palabras = resultado.text.toString()
+                var mayo35t=0
+                var mayo50=0
+                var total=0
+                for (i in elarray) {
+                    total+=i
+                    if (i > 35) {
+                        mayo35t += i
+                    }
+                    if (i > 50) {
+                        mayo50++
+                    }
+                }
+
+                palabras += " El total accumulated is: $total\n" +
+                        "The total acumulated by numbers bigger than 35 is: $mayo35t\n" +
+                        "The amount of numbers bigger than 50 is: $mayo50"
+                resultado.text = palabras
+            }
     }
     fun pr104() {
         println("Proyecto104:")
