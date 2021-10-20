@@ -11,43 +11,48 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        enunciado.text = "Proyecto 104"
-        in1.isVisible = false
-        in2.isVisible = false
-        in3.isVisible = false
+        enunciado.text = "Proyecto 111"
+//        in1.isVisible = false
+//        in2.isVisible = false
+//        in3.isVisible = false
         in4.isVisible = false
         in5.isVisible = false
         resultado.text = ""
 
         button.setOnClickListener {
-//            val num1 = in1.text.toString().toFloat()
-//            val num2 = in2.text.toString().toFloat()
-//            val num3 = in3.text.toString().toFloat()
-//            val num4 = in4.text.toString().toFloat()
-//            val num5 = in5.text.toString().toFloat()
-            mensajeComplex("")
-//            val arrayNumeros:FloatArray = FloatArray(5)
-//            arrayNumeros[0]=num1
-//            arrayNumeros[1]=num2
-//            arrayNumeros[2]=num3
-//            arrayNumeros[3]=num4
-//            arrayNumeros[4]=num5
-            val arrayNumeros= arrayOf<Int>(10,20,30,40)
-            val arrayNumeros2= arrayOf<Int>(70,80,90,100)
-            mensajeArray(arrayNumeros,arrayNumeros2)
+            mensajeComplex("This program assigns values to the class Triangulo")
+            val num1 = in1.text.toString()
+            val num2 = in2.text.toString().toInt()
+            val num3 = in3.text.toString()
+            val num4 = in4.text.toString().toInt()
+//            val num5 = in5.text.toString().toInt()
+            val alu1 = Alumno()
+            alu1.inicializar(num2,num1)
+            mensaje( alu1.imprimir())
+            mensaje(" This Student has ${ alu1.imprimir() } marks")
+            val alu2 = Alumno()
+            alu2.inicializar(num4,num3)
+            mensaje( alu2.imprimir())
+            mensaje(" This Student has ${ alu2.imprimir() } marks")
         }
     }
-    fun mensajeArray(elarray: Array<Int>,elarray2: Array<Int>) {
-        var palabras = resultado.text.toString()
-        val arraySuma= arrayOf<Int>()
-        for (i in elarray) {
-            arraySuma[i]=elarray[i]+elarray2[i]
-        }
+    class Alumno {
+        var nota: Int = 0
+        var nombre: String = ""
 
-        for (j in arraySuma){
-            palabras+="$j\n"
+        fun inicializar(num1: Int, num2: String,) {
+            this.nota = num1
+            this.nombre = num2
         }
-        resultado.text = palabras
+        fun imprimir() :String{
+            return ("The student $nombre has marks of $nota")
+        }
+        fun regular():String {
+           when{
+               nota>4->return "Regular"
+               else ->return "Under regular"
+           }
+        }
     }
     fun operacion() {
         var palabras = resultado.text.toString()
@@ -66,6 +71,7 @@ class MainActivity : AppCompatActivity() {
         palabras += "$mensaje \n"
         resultado.text = palabras
     }
+
     fun mensajeComplex(mensaje: String) {
         var palabras = resultado.text.toString()
         palabras += ("*******************************\n")
@@ -74,6 +80,5 @@ class MainActivity : AppCompatActivity() {
         resultado.text = palabras
     }
 
-    }
 
-
+}

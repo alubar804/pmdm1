@@ -858,7 +858,6 @@ val num1 = in1.text.toString().toInt()
                     val num2 = in2.text.toString().toInt()
                     val num3 = in3.text.toString().toInt()
                     val num4 = in4.text.toString().toInt()
-        //            //            val num5 = in5.text.toString().toInt()
                     val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
 
                     var cantidad = 0
@@ -901,7 +900,7 @@ val num1 = in1.text.toString().toInt()
                     val num2 = in2.text.toString().toInt()
                     val num3 = in3.text.toString().toInt()
                     val num4 = in4.text.toString().toInt()
-        //            //            val num5 = in5.text.toString().toInt()
+
                     val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
 
 
@@ -939,9 +938,6 @@ val num1 = in1.text.toString().toInt()
     fun pr59() {
         val num1 = in1.text.toString().toInt()
                     val num2 = in2.text.toString().toInt()
-        //            val num3 = in3.text.toString().toInt()
-        //            val num4 = in4.text.toString().toInt()
-        //            //            val num5 = in5.text.toString().toInt()
 
 
 
@@ -965,8 +961,7 @@ val num1 = in1.text.toString().toInt()
        val num1 = in1.text.toString().toInt()
                    val num2 = in2.text.toString().toInt()
                    val num3 = in3.text.toString().toInt()
-       //            val num4 = in4.text.toString().toInt()
-       //            //            val num5 = in5.text.toString().toInt()
+
 
                    var palabras =""
 
@@ -988,7 +983,6 @@ val num1 = in1.text.toString().toInt()
             val num2 = in2.text.toString().toInt()
             val num3 = in3.text.toString().toInt()
             val num4 = in4.text.toString().toInt()
-//            //            val num5 = in5.text.toString().toInt()
             val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
             var palabras =""
            var x = 0
@@ -1023,7 +1017,7 @@ val num1 = in1.text.toString().toInt()
                     val num2 = in2.text.toString().toInt()
                     val num3 = in3.text.toString().toInt()
                     val num4 = in4.text.toString().toInt()
-        //            //            val num5 = in5.text.toString().toInt()
+
                     val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
                     var palabras =""
 
@@ -1054,12 +1048,7 @@ val num1 = in1.text.toString().toInt()
     }
     fun pr63() {
                 val num1 = in1.text.toString().toInt()
-        //            val num2 = in2.text.toString().toInt()
-        //            val num3 = in3.text.toString().toInt()
-        //            val num4 = in4.text.toString().toInt()
-        //            //            val num5 = in5.text.toString().toInt()
-        //            val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
-                    var palabras =""
+                     var palabras =""
                     when {
                         num1 == 0 ->  palabras+=("the inputed value is zero")
                         num1 > 0 ->  palabras+=("the inputed value is positive")
@@ -1073,7 +1062,6 @@ val num1 = in1.text.toString().toInt()
                    val num2 = in2.text.toString().toInt()
                    val num3 = in3.text.toString().toInt()
                    val num4 = in4.text.toString().toInt()
-       //            //            val num5 = in5.text.toString().toInt()
                    val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
                    var palabras =""
                    var suma = 0
@@ -1097,7 +1085,7 @@ val num1 = in1.text.toString().toInt()
                    val num2 = in2.text.toString().toInt()
                    val num3 = in3.text.toString().toInt()
                    val num4 = in4.text.toString().toInt()
-       //            //            val num5 = in5.text.toString().toInt()
+
                    val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
                    var palabras =""
                    var cant1 = 0
@@ -1137,10 +1125,6 @@ val num1 = in1.text.toString().toInt()
     }
     fun pr66() {
                    val num1 = in1.text.toString().toInt()
-        //            val num2 = in2.text.toString().toInt()
-        //            val num3 = in3.text.toString().toInt()
-        //            val num4 = in4.text.toString().toInt()
-        //            //            val num5 = in5.text.toString().toInt()
 
                     var palabras =""
 
@@ -1158,10 +1142,6 @@ val num1 = in1.text.toString().toInt()
     }
     fun pr67() {
                    val num1 = in1.text.toString().toInt()
-       //            val num2 = in2.text.toString().toInt()
-       //            val num3 = in3.text.toString().toInt()
-       //            val num4 = in4.text.toString().toInt()
-       //            //            val num5 = in5.text.toString().toInt()
 
                    var palabras =""
 
@@ -1182,7 +1162,6 @@ val num1 = in1.text.toString().toInt()
                     val num2 = in2.text.toString().toInt()
                     val num3 = in3.text.toString().toInt()
                     val num4 = in4.text.toString().toInt()
-        //            //            val num5 = in5.text.toString().toInt()
                     val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
                     var palabras =""
                     var cont0 =0
@@ -1206,7 +1185,7 @@ val num1 = in1.text.toString().toInt()
                     val num2 = in2.text.toString().toInt()
                     val num3 = in3.text.toString().toInt()
                     val num4 = in4.text.toString().toInt()
-        //            //            val num5 = in5.text.toString().toInt()
+
                     val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
                     var palabras =""
                     var cont0 =0
@@ -1241,11 +1220,7 @@ val num1 = in1.text.toString().toInt()
                 var palabras =resultado.text.toString()
                 val num1 = in1.text.toString().toInt()
                 val num2 = in2.text.toString().toInt()
-        //        val num3 = in3.text.toString().toInt()
-        //        val num4 = in4.text.toString().toInt()
-        //            //            val num5 = in5.text.toString().toInt()
-        //        val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
-                val suma = num1+num2
+                   val suma = num1+num2
                 palabras+="The value of the sum is $suma\n"
                 resultado.text =palabras
             }
@@ -1272,11 +1247,7 @@ val num1 = in1.text.toString().toInt()
                 var palabras =resultado.text.toString()
                 val num1 = in1.text.toString().toInt()
                 val num2 = in2.text.toString().toInt()
-        //        val num3 = in3.text.toString().toInt()
-        //        val num4 = in4.text.toString().toInt()
-        //            //            val num5 = in5.text.toString().toInt()
-        //        val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
-                val suma = num1+num2
+                   val suma = num1+num2
                 palabras+="The value of the sum is $suma\n"
                 resultado.text =palabras
             }
@@ -1303,24 +1274,16 @@ val num1 = in1.text.toString().toInt()
            fun operacion1(){
                var palabras =resultado.text.toString()
                val num1 = in1.text.toString().toInt()
-       //        val num2 = in2.text.toString().toInt()
-       //        val num3 = in3.text.toString().toInt()
-       //        val num4 = in4.text.toString().toInt()
-       //            //            val num5 = in5.text.toString().toInt()
-       //        val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
-               val square = num1*num1
+              val square = num1*num1
                palabras+="The square of $num1 is $square\n"
                resultado.text =palabras
            }
            fun operacion2(){
                var palabras =resultado.text.toString()
-       //        val num1 = in1.text.toString().toInt()
+
                val num2 = in2.text.toString().toInt()
                val num3 = in3.text.toString().toInt()
-       //        val num4 = in4.text.toString().toInt()
-       //            //            val num5 = in5.text.toString().toInt()
-       //        val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
-               val suma = num3+num2
+                    val suma = num3+num2
                palabras+="The value of the sum of $num2 and $num3 is $suma\n"
                resultado.text =palabras
            }
@@ -1349,9 +1312,6 @@ val num1 = in1.text.toString().toInt()
                 val num1 = in1.text.toString().toInt()
                 val num2 = in2.text.toString().toInt()
                 val num3 = in3.text.toString().toInt()
-        //        val num4 = in4.text.toString().toInt()
-        //            //            val num5 = in5.text.toString().toInt()
-        //        val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
 
                 val menor = if (num1 < num2 && num1 < num3) num1 else if (num2 < num3) num2 else num3
                 palabras+="The smallest number of inputed ones is $menor\n"
@@ -1383,10 +1343,6 @@ val num1 = in1.text.toString().toInt()
                 var palabras =resultado.text.toString()
                 val num1 = in1.text.toString().toInt()
                 val num2 = in2.text.toString().toInt()
-        //        val num3 = in3.text.toString().toInt()
-        //        val num4 = in4.text.toString().toInt()
-        //            //            val num5 = in5.text.toString().toInt()
-        //        val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
 
                 val suma = num1+num2
                 palabras+="The sum of $num1 and $num2 equals $suma\n"
@@ -1411,8 +1367,6 @@ val num1 = in1.text.toString().toInt()
                     val num1 = in1.text.toString().toInt()
                     val num2 = in2.text.toString().toInt()
                 val num3 = in3.text.toString().toInt()
-        //        val num4 = in4.text.toString().toInt()
-        //            //            val num5 = in5.text.toString().toInt()
                     mensaje("This program shows the biggest of 3 inputs")
                     operacion1(num1,num2,num3)
                     mensaje("End of the program, thanks for using it")
@@ -1428,7 +1382,6 @@ val num1 = in1.text.toString().toInt()
             fun operacion1(num1:Int, num2:Int, num3:Int){
                 var palabras =resultado.text.toString()
 
-        //        val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
 
                 val mayor = if (num1 > num2 && num1 > num3) num1 else if (num2 > num3) num2 else num3
                 palabras+="The biggest out of $num1 , $num2 and $num3 is: $mayor\n"
@@ -1451,9 +1404,6 @@ val num1 = in1.text.toString().toInt()
     fun pr76() {
           val num1 = in1.text.toString().toInt()
                     val num2 = in2.text.toString()
-        //            val num3 = in3.text.toString().toInt()
-        //        val num4 = in4.text.toString().toInt()
-        //            //            val num5 = in5.text.toString().toInt()
 
                     when(num2){
                         "perimetro"->perimetro(num1)
@@ -1472,7 +1422,7 @@ val num1 = in1.text.toString().toInt()
             fun perimetro(num1:Int){
                 var palabras =resultado.text.toString()
 
-        //        val arrayListo =  arrayOf<Int>(num1,num2,num3,num4)
+
                 val per=num1*4
 
                 palabras+="The perimeter of a square with a side of $num1 is $per \n"
@@ -1496,10 +1446,7 @@ val num1 = in1.text.toString().toInt()
     fun pr77() {
         val num1 = in1.text.toString()
                     val num2 = in2.text.toString()
-        //            val num3 = in3.text.toString().toInt()
-        //        val num4 = in4.text.toString().toInt()
-        //            //            val num5 = in5.text.toString().toInt()
-                    claves(num1,num2)
+                     claves(num1,num2)
 
                     mensaje("End of the program, thanks for using it")
 
@@ -1537,8 +1484,6 @@ val num1 = in1.text.toString().toInt()
          val num1 = in1.text.toString().toInt()
                     val num2 = in2.text.toString().toInt()
                     val num3 = in3.text.toString().toInt()
-        //        val num4 = in4.text.toString().toInt()
-        //            //            val num5 = in5.text.toString().toInt()
                     mensaje("This program orders the inputs from biggest to smallest")
                     mayorMenor(num1,num2, num3)
 
@@ -1590,11 +1535,7 @@ val num1 = in1.text.toString().toInt()
     fun pr79() {
                button.setOnClickListener {
                    val num1 = in1.text.toString().toInt()
-       //            val num2 = in2.text.toString().toInt()
-       //            val num3 = in3.text.toString().toInt()
-       //        val num4 = in4.text.toString().toInt()
-       //            //            val num5 = in5.text.toString().toInt()
-                   mensaje("This program returns the surface of a square with a side of $num1")
+                     mensaje("This program returns the surface of a square with a side of $num1")
                    var sup = superficie(num1)
                    mensaje("The surface of the square is $sup")
                    mensaje("End of the program, thanks for using it")
@@ -1628,10 +1569,7 @@ val num1 = in1.text.toString().toInt()
                 button.setOnClickListener {
                     val num1 = in1.text.toString().toInt()
                     val num2 = in2.text.toString().toInt()
-        //            val num3 = in3.text.toString().toInt()
-        //        val num4 = in4.text.toString().toInt()
-        //            //            val num5 = in5.text.toString().toInt()
-                    mensaje("This program returns the biggest out of two numbers")
+                   mensaje("This program returns the biggest out of two numbers")
                     var valor = operacion(num1,num2)
                     mensaje("The biggest number is $valor")
                     mensaje("End of the program, thanks for using it")
@@ -1668,10 +1606,7 @@ val num1 = in1.text.toString().toInt()
 button.setOnClickListener {
             val num1 = in1.text.toString()
             val num2 = in2.text.toString()
-            //            val num3 = in3.text.toString().toInt()
-            //        val num4 = in4.text.toString().toInt()
-            //            //            val num5 = in5.text.toString().toInt()
-            mensaje("This program compares the letter \ncount of two words and returns the biggest")
+                mensaje("This program compares the letter \ncount of two words and returns the biggest")
 
             if (operacion(num1)>operacion(num2)){
                 mensaje("The biggest letter count belongs to $num1")
@@ -1702,9 +1637,7 @@ button.setOnClickListener {
             val num1 = in1.text.toString().toInt()
             val num2 = in2.text.toString().toInt()
                         val num3 = in3.text.toString().toInt()
-            //        val num4 = in4.text.toString().toInt()
-            //            //            val num5 = in5.text.toString().toInt()
-            mensaje("This program returns the average of tree numbers")
+             mensaje("This program returns the average of tree numbers")
 
             mensaje("the average equals ${operacion(num1,num2,num3)} ")
             mensaje("End of the program, thanks for using it")
@@ -1738,11 +1671,7 @@ button.setOnClickListener {
     fun pr83() {
         utton.setOnClickListener {
                     val num1 = in1.text.toString().toInt()
-        //            val num2 = in2.text.toString().toInt()
-        //                        val num3 = in3.text.toString().toInt()
-                    //        val num4 = in4.text.toString().toInt()
-                    //            //            val num5 = in5.text.toString().toInt()
-                    mensaje("This program returns the average of tree numbers")
+                   mensaje("This program returns the average of tree numbers")
 
                     mensaje("the perimeter equals ${operacion(num1)} ")
                     mensaje("End of the program, thanks for using it")
@@ -1767,7 +1696,7 @@ button.setOnClickListener {
                     val num2 = in2.text.toString().toInt()
                                 val num3 = in3.text.toString().toInt()
                             val num4 = in4.text.toString().toInt()
-                    //            //            val num5 = in5.text.toString().toInt()
+
                     mensaje("This program returns the average of tree numbers")
                     if (operacion(num1,num2)==operacion(num3,num4)){
                         mensaje("Both rectangles have the same perimeter")
@@ -1824,9 +1753,6 @@ button.setOnClickListener {
     fun pr86() {
         val num1 = in1.text.toString().toInt()
                    val num2 = in2.text.toString().toInt()
-       //                        val num3 = in3.text.toString().toInt()
-       //                    val num4 = in4.text.toString().toInt()
-                   //            //            val num5 = in5.text.toString().toInt()
                    mensaje("This program returns the biggest out of three numbers")
 
                    mensaje("The biggest number is ${operacion(num1,num2)}")
@@ -1850,11 +1776,7 @@ button.setOnClickListener {
     }
     fun pr87() {
          val num1 = in1.text.toString().toInt()
-        //            val num2 = in2.text.toString().toInt()
-        //                        val num3 = in3.text.toString().toInt()
-        //                    val num4 = in4.text.toString().toInt()
-                    //            //            val num5 = in5.text.toString().toInt()
-                    mensaje("This program returns the number in letters")
+                 mensaje("This program returns the number in letters")
 
                     mensaje("The number is ${operacion(num1)}")
 
@@ -2036,8 +1958,6 @@ button.setOnClickListener {
                     val num1 = in1?.text.toString()
                     val num2 = in2?.text.toString().toInt()
                     val num3 = in3?.text.toString().toInt()
-        //            val num4 = in4?.text.toString().toInt()
-        //            val num5 = in5?.text.toString().toInt()
                     mensaje("This program calculates the owed salary of an employee")
 
                     operacion(num1,num2,num3)
@@ -2059,9 +1979,7 @@ button.setOnClickListener {
         button.setOnClickListener {
                     val num1 :Int= in1.text.toString().toInt()
                     val num2 :Int= in2.text.toString().toInt()
-        //            val num3 :Int?= in3?.text.toString().toInt()
-        //            val num4 :Int?= in4?.text.toString().toInt()
-        //            val num5 :Int?= in5?.text.toString().toInt()
+
                     mensajeComplex("This program calculates the multiplication table of a specified value")
                     operacion(num1)
                     operacion(num1,num2)
@@ -2084,11 +2002,7 @@ button.setOnClickListener {
     }
     fun pr96() {
         button.setOnClickListener {
-        //            val num1 :Int= in1.text.toString().toInt()
-        //            val num2 :Int= in2.text.toString().toInt()
-        //            val num3 :Int= in3?.text.toString().toInt()
-        //            val num4 :Int= in4?.text.toString().toInt()
-        //            val num5 :Int= in5?.text.toString().toInt()
+
                     mensajeComplex("This program counts multiples of 2 and 5")
                     operacion()
 
@@ -2205,18 +2119,9 @@ button.setOnClickListener {
     }
     fun pr100() {
         button.setOnClickListener {
-        //            val num1 = in1.text.toString().toFloat()
-        //            val num2 = in2.text.toString().toFloat()
-        //            val num3 = in3.text.toString().toFloat()
-        //            val num4 = in4.text.toString().toFloat()
-        //            val num5 = in5.text.toString().toFloat()
+
                     mensajeComplex("This program reads an array and checks whether or not it's ordered from smallest to biggest")
-        //            val arrayNumeros:FloatArray = FloatArray(5)
-        //            arrayNumeros[0]=num1
-        //            arrayNumeros[1]=num2
-        //            arrayNumeros[2]=num3
-        //            arrayNumeros[3]=num4
-        //            arrayNumeros[4]=num5
+
                     val arrayNumeros= arrayOf<Int>(1,2,3,4,5,6,7,8,9,10)
                     mensajeArray(arrayNumeros)
                 }
@@ -2240,18 +2145,9 @@ button.setOnClickListener {
     }
     fun pr101() {
         button.setOnClickListener {
-        //            val num1 = in1.text.toString().toFloat()
-        //            val num2 = in2.text.toString().toFloat()
-        //            val num3 = in3.text.toString().toFloat()
-        //            val num4 = in4.text.toString().toFloat()
-        //            val num5 = in5.text.toString().toFloat()
+
                     mensajeComplex("This program returns the first and last elements of an array")
-        //            val arrayNumeros:FloatArray = FloatArray(5)
-        //            arrayNumeros[0]=num1
-        //            arrayNumeros[1]=num2
-        //            arrayNumeros[2]=num3
-        //            arrayNumeros[3]=num4
-        //            arrayNumeros[4]=num5
+
                     val arrayNumeros= arrayOf<Int>(1,2,3,4,5,6,7,8,9,10)
                     mensajeArray(arrayNumeros)
                 }
@@ -2269,18 +2165,9 @@ button.setOnClickListener {
     }
     fun pr102() {
          button.setOnClickListener {
-        //            val num1 = in1.text.toString().toFloat()
-        //            val num2 = in2.text.toString().toFloat()
-        //            val num3 = in3.text.toString().toFloat()
-        //            val num4 = in4.text.toString().toFloat()
-        //            val num5 = in5.text.toString().toFloat()
+
                     mensajeComplex("This program returns the first and last elements of an array")
-        //            val arrayNumeros:FloatArray = FloatArray(5)
-        //            arrayNumeros[0]=num1
-        //            arrayNumeros[1]=num2
-        //            arrayNumeros[2]=num3
-        //            arrayNumeros[3]=num4
-        //            arrayNumeros[4]=num5
+
                     val arrayNumeros= arrayOf<Int>(1,2,3,4,5,6,7,8,9,10)
                     mensajeArray(arrayNumeros)
                 }
@@ -2298,18 +2185,9 @@ button.setOnClickListener {
     }
     fun pr103() {
          button.setOnClickListener {
-        //            val num1 = in1.text.toString().toFloat()
-        //            val num2 = in2.text.toString().toFloat()
-        //            val num3 = in3.text.toString().toFloat()
-        //            val num4 = in4.text.toString().toFloat()
-        //            val num5 = in5.text.toString().toFloat()
+
                     mensajeComplex("")
-        //            val arrayNumeros:FloatArray = FloatArray(5)
-        //            arrayNumeros[0]=num1
-        //            arrayNumeros[1]=num2
-        //            arrayNumeros[2]=num3
-        //            arrayNumeros[3]=num4
-        //            arrayNumeros[4]=num5
+
                     val arrayNumeros= arrayOf<Int>(10,20,30,40,50,60,70,80,90,100)
                     mensajeArray(arrayNumeros)
                 }
@@ -2336,36 +2214,302 @@ button.setOnClickListener {
             }
     }
     fun pr104() {
-        println("Proyecto104:")
-        //
+        button.setOnClickListener {
+                    mensajeComplex("This program sums two arryais and prints the sum as another array")
+                    val arrayNumeros= arrayOf<Int>(10,20,30,40)
+                    val arrayNumeros2= arrayOf<Int>(70,80,90,100)
+                    mensajeArray(arrayNumeros,arrayNumeros2)
+                }
+            }
+            fun mensajeArray(elarray: Array<Int>,elarray2: Array<Int>) {
+                var palabras = resultado.text.toString()
+                val arrayNumeros:IntArray = IntArray(4)
+                for (i in 0 until elarray.size) {
+                    arrayNumeros[i]=elarray[i]+elarray2[i]
+                }
+
+                for (j in arrayNumeros){
+                    palabras+="$j\n"
+                }
+                resultado.text = palabras
+            }
     }
     fun pr105() {
-        println("Proyecto105:")
-        //
+          button.setOnClickListener {
+                    mensajeComplex("This program asigns values to an array and prints it")
+        //            val num1 = in1.text.toString().toFloat()
+        //            val num2 = in2.text.toString().toFloat()
+        //            val num3 = in3.text.toString().toFloat()
+        //            val num4 = in4.text.toString().toFloat()
+        //            val num5 = in5.text.toString().toFloat()
+
+                    val arrayNumeros:IntArray = IntArray(5)
+        //            arrayNumeros[0]=num1
+        //            arrayNumeros[1]=num2
+        //            arrayNumeros[2]=num3
+        //            arrayNumeros[3]=num4
+        //            arrayNumeros[4]=num5
+
+                    asignaArray(arrayNumeros)
+                    opArray(arrayNumeros)
+                }
+            }
+            fun asignaArray(elarray: IntArray,) {
+                var palabras = resultado.text.toString()
+                val arrayNumeros= arrayOf<Int>(10,20,30,40,50)
+                for (i in 0 until elarray.size) {
+                        elarray[i]=arrayNumeros[i]
+                }
+
+
+                resultado.text = palabras
+            }
+            fun opArray(elarray: IntArray,) {
+                var palabras = resultado.text.toString()
+
+                for (j in elarray){
+                    palabras+="$j\n"
+                }
+                resultado.text = palabras
+            }
     }
     fun pr106() {
-        println("Proyecto106:")
-        //
+         button.setOnClickListener {
+                    mensajeComplex("This program assigns values to an array depending on the input ")
+                    val num1 = in1.text.toString().toInt()
+        //            val num2 = in2.text.toString().toFloat()
+        //            val num3 = in3.text.toString().toFloat()
+        //            val num4 = in4.text.toString().toFloat()
+        //            val num5 = in5.text.toString().toFloat()
+
+                    val arrayNumeros:IntArray = IntArray(num1)
+        //            arrayNumeros[0]=num1
+        //            arrayNumeros[1]=num2
+        //            arrayNumeros[2]=num3
+        //            arrayNumeros[3]=num4
+        //            arrayNumeros[4]=num5
+
+                    asignaArray(arrayNumeros)
+                    opArray(arrayNumeros)
+                }
+            }
+            fun asignaArray(elarray: IntArray,) {
+                var palabras = resultado.text.toString()
+                val arrayNumeros= arrayOf<Int>(10,20,30,40,50,60,70,80,90,10,20,30,40,50,60,70,80,90,10,20)
+                for (i in 0 until elarray.size) {
+                        elarray[i]=arrayNumeros[i]
+                }
+                resultado.text = palabras
+            }
+            fun opArray(elarray: IntArray,) {
+                var palabras = resultado.text.toString()
+
+                for (j in elarray){
+                    palabras+="$j\n"
+                }
+                resultado.text = palabras
+            }
     }
     fun pr107() {
-        println("Proyecto107:")
-        //
+        button.setOnClickListener {
+                    mensajeComplex("This program assigns values to an array depending on the input and then sums the contents")
+                    val num1 = in1.text.toString().toInt()
+        //            val num2 = in2.text.toString().toFloat()
+        //            val num3 = in3.text.toString().toFloat()
+        //            val num4 = in4.text.toString().toFloat()
+        //            val num5 = in5.text.toString().toFloat()
+
+                    val arrayNumeros:IntArray = IntArray(num1)
+        //            arrayNumeros[0]=num1
+        //            arrayNumeros[1]=num2
+        //            arrayNumeros[2]=num3
+        //            arrayNumeros[3]=num4
+        //            arrayNumeros[4]=num5
+
+                    asignaArray(arrayNumeros)
+                    opArray(arrayNumeros)
+                    mensaje(" the sum of the contents of the array equals : ${sumar(arrayNumeros)}")
+                }
+            }
+
+            private fun sumar(arrayNumeros: IntArray):Int {
+                var suma=0
+                for (i in arrayNumeros){
+                    suma+=i
+                }
+                return suma
+            }
+
+            fun asignaArray(elarray: IntArray,) {
+                var palabras = resultado.text.toString()
+                val arrayNumeros= arrayOf<Int>(10,20,30,40,50,60,70,80,90,10,20,30,40,50,60,70,80,90,10,20)
+                for (i in 0 until elarray.size) {
+                        elarray[i]=arrayNumeros[i]
+                }
+                resultado.text = palabras
+            }
+            fun opArray(elarray: IntArray,) {
+                var palabras = resultado.text.toString()
+
+                for (j in elarray){
+                    palabras+="$j\n"
+                }
+                resultado.text = palabras
+            }
     }
     fun pr108() {
-        println("Proyecto108:")
-        //
+       button.setOnClickListener {
+                   mensajeComplex("This program assigns values to an array searches the smallest number in it and how many times it's present")
+                   val num1 = in1.text.toString().toInt()
+       //            val num2 = in2.text.toString().toFloat()
+       //            val num3 = in3.text.toString().toFloat()
+       //            val num4 = in4.text.toString().toFloat()
+       //            val num5 = in5.text.toString().toFloat()
+                   val arrayNumeros:IntArray = IntArray(num1)
+       //            arrayNumeros[0]=num1
+       //            arrayNumeros[1]=num2
+       //            arrayNumeros[2]=num3
+       //            arrayNumeros[3]=num4
+       //            arrayNumeros[4]=num5
+                   asignaArray(arrayNumeros)
+                   opArray(arrayNumeros)
+                   mensaje(" the smallest number is ${menor(arrayNumeros)} and it apears a total of ${busqueda(arrayNumeros,menor(arrayNumeros))} times")
+               }
+           }
+           fun menor(elarray: IntArray):Int{
+               var min=elarray[0]
+               for (i in elarray){
+                   if (min>i){
+                       min=i
+                   }
+               }
+               return min
+           }
+           fun busqueda(elarray: IntArray,buscado:Int):Int{
+               var contador=0
+               for (i in elarray){
+                   if (i==buscado){
+                       contador++
+                   }
+               }
+               return contador
+           }
     }
     fun pr109() {
-        println("Proyecto109:")
-        //
+        button.setOnClickListener {
+                   mensajeComplex("This program assigns values the class Persona")
+       //            val num1 = in1.text.toString().toInt()
+       //            val num2 = in2.text.toString().toFloat()
+       //            val num3 = in3.text.toString().toFloat()
+       //            val num4 = in4.text.toString().toFloat()
+       //            val num5 = in5.text.toString().toFloat()
+                   val persona1 = Persona()
+                   persona1.inicializar("Juan", 12)
+                   mensaje(persona1.imprimir())
+                   persona1.esMayorEdad()
+                   val persona2 = Persona()
+                   persona2.inicializar("Ana", 50)
+                   mensaje(persona2.imprimir())
+                   persona2.esMayorEdad()
+                   mensaje("")
+               }
+           }
+           class Persona {
+               var nombre: String = ""
+               var edad: Int = 0
+               fun inicializar(nombre: String, edad: Int) {
+                   this.nombre = nombre
+                   this.edad = edad
+               }
+               fun imprimir() :String{
+                   return ("Nombre: $nombre y tiene una edad de $edad")
+               }
+               fun esMayorEdad() {
+                   if (edad >= 18)
+                       println("Es mayor de edad $nombre")
+                   else
+                       println("No es mayor de edad $nombre")
+               }
+           }
     }
     fun pr110() {
-        println("Proyecto110:")
-        //
+        button.setOnClickListener {
+                    mensajeComplex("This program assigns values to the class Triangulo")
+                    val num1 = in1.text.toString().toInt()
+                    val num2 = in2.text.toString().toInt()
+                    val num3 = in3.text.toString().toInt()
+        //            val num4 = in4.text.toString().toInt()
+        //            val num5 = in5.text.toString().toInt()
+                    val Triangulo1 = Triangulo()
+                    Triangulo1.inicializar(num1,num2,num3)
+                    mensaje(Triangulo1.equilatero())
+                    mensaje(" The biggest side is ${ Triangulo1.equilatero() }")
+
+                    mensaje("")
+                }
+            }
+            class Triangulo {
+                var lado1: Int = 0
+                var lado2: Int = 0
+                var lado3: Int = 0
+                fun inicializar(num1: Int, num2: Int,num3:Int) {
+                    this.lado1 = num1
+                    this.lado2 = num2
+                    this.lado3 = num3
+                }
+                fun equilatero() :String{
+                    if (lado1 == lado2 && lado1 == lado3){
+                        return ("It's an equilateral triangle")
+                    }else{
+                        return ("It's not an equilateral triangle")
+                    }
+
+                }
+                fun esMayorLado():Int {
+                   when{
+                       lado1>lado2 && lado1>lado3 ->return lado1
+                       lado2>lado3 ->return lado2
+                       else ->return lado3
+                   }
+                }
+            }
     }
     fun pr111() {
-        println("Proyecto111:")
-        //
+         button.setOnClickListener {
+                    mensajeComplex("This program assigns values to the class Triangulo")
+                    val num1 = in1.text.toString()
+                    val num2 = in2.text.toString().toInt()
+                    val num3 = in3.text.toString()
+                    val num4 = in4.text.toString().toInt()
+        //            val num5 = in5.text.toString().toInt()
+                    val alu1 = Alumno()
+                    alu1.inicializar(num2,num1)
+                    mensaje( alu1.imprimir())
+                    mensaje(" This Student has ${ alu1.imprimir() } marks")
+                    val alu2 = Alumno()
+                    alu2.inicializar(num4,num3)
+                    mensaje( alu2.imprimir())
+                    mensaje(" This Student has ${ alu2.imprimir() } marks")
+                }
+            }
+            class Alumno {
+                var nota: Int = 0
+                var nombre: String = ""
+
+                fun inicializar(num1: Int, num2: String,) {
+                    this.nota = num1
+                    this.nombre = num2
+                }
+                fun imprimir() :String{
+                    return ("The student $nombre has marks of $nota")
+                }
+                fun regular():String {
+                   when{
+                       nota>4->return "Regular"
+                       else ->return "Under regular"
+                   }
+                }
+            }
     }
     fun pr112() {
         println("Proyecto112:")
