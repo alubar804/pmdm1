@@ -2237,7 +2237,7 @@ button.setOnClickListener {
     fun pr105() {
           button.setOnClickListener {
                     mensajeComplex("This program asigns values to an array and prints it")
-        //            val num1 = in1.text.toString().toFloat()
+        .toFloat()
         //            val num2 = in2.text.toString().toFloat()
         //            val num3 = in3.text.toString().toFloat()
         //            val num4 = in4.text.toString().toFloat()
@@ -2398,7 +2398,7 @@ button.setOnClickListener {
     fun pr109() {
         button.setOnClickListener {
                    mensajeComplex("This program assigns values the class Persona")
-       //            val num1 = in1.text.toString().toInt()
+       .toInt()
        //            val num2 = in2.text.toString().toFloat()
        //            val num3 = in3.text.toString().toFloat()
        //            val num4 = in4.text.toString().toFloat()
@@ -2433,6 +2433,7 @@ button.setOnClickListener {
            }
     }
     fun pr110() {
+    ////////////////////////error en la captura el segundo mensaje con metodo probablmente erroneo aqui corregifo
         button.setOnClickListener {
                     mensajeComplex("This program assigns values to the class Triangulo")
                     val num1 = in1.text.toString().toInt()
@@ -2443,7 +2444,7 @@ button.setOnClickListener {
                     val Triangulo1 = Triangulo()
                     Triangulo1.inicializar(num1,num2,num3)
                     mensaje(Triangulo1.equilatero())
-                    mensaje(" The biggest side is ${ Triangulo1.equilatero() }")
+                    mensaje(" The biggest side is ${ Triangulo1.esMayorLado() }")
 
                     mensaje("")
                 }
@@ -2485,11 +2486,11 @@ button.setOnClickListener {
                     val alu1 = Alumno()
                     alu1.inicializar(num2,num1)
                     mensaje( alu1.imprimir())
-                    mensaje(" This Student has ${ alu1.imprimir() } marks")
+                    mensaje(" This Student has ${ alu1.regular() } marks")
                     val alu2 = Alumno()
                     alu2.inicializar(num4,num3)
                     mensaje( alu2.imprimir())
-                    mensaje(" This Student has ${ alu2.imprimir() } marks")
+                    mensaje(" This Student has ${ alu2.regular() } marks")
                 }
             }
             class Alumno {
@@ -2512,56 +2513,427 @@ button.setOnClickListener {
             }
     }
     fun pr112() {
-        println("Proyecto112:")
-        //
+         button.setOnClickListener {
+                    button.setOnClickListener {
+                        mensajeComplex("This program assigns values the class Persona")
+        //                            val num1 = in1.text.toString().toInt()
+        //                            val num2 = in2.text.toString().toFloat()
+                        //            val num3 = in3.text.toString().toFloat()
+                        //            val num4 = in4.text.toString().toFloat()
+                        //            val num5 = in5.text.toString().toFloat()
+                        val persona1 = Persona("Juan", 12)
+                        mensaje(persona1.imprimir())
+                        persona1.esMayorEdad()
+                        val persona2 = Persona("Ana", 50)
+                        mensaje(persona2.imprimir())
+                        persona2.esMayorEdad()
+                        mensaje("")
+                    }
+                }
+            }
+
+            class Persona (nombre: String, edad: Int){
+                var nombre: String = nombre
+                var edad: Int = edad
+
+
+                fun imprimir(): String {
+                    return ("Nombre: $nombre y tiene una edad de $edad")
+                }
+                fun esMayorEdad() {
+                    if (edad >= 18)
+                        println("Es mayor de edad $nombre")
+                    else
+                        println("No es mayor de edad $nombre")
+                }
+            }
     }
     fun pr113() {
-        println("Proyecto113:")
-        //
+         button.setOnClickListener {
+                    mensajeComplex("This program assigns values to the class Triangulo")
+                    val num1 = in1.text.toString().toInt()
+                    val num2 = in2.text.toString().toInt()
+                    val num3 = in3.text.toString().toInt()
+                    //            val num4 = in4.text.toString().toInt()
+                    //            val num5 = in5.text.toString().toInt()
+                    val Triangulo1 = Triangulo(num1,num2,num3)
+                    mensaje(Triangulo1.equilatero())
+                    mensaje(" The biggest side is ${ Triangulo1.esMayorLado() }")
+
+                    mensaje("")
+                }
+            }
+            class Triangulo (num1:Int,num2:Int,num3:Int){
+                var lado1: Int = num1
+                var lado2: Int = num2
+                var lado3: Int = num3
+                fun equilatero() :String{
+                    if (lado1 == lado2 && lado1 == lado3){
+                        return ("It's an equilateral triangle")
+                    }else{
+                        return ("It's not an equilateral triangle")
+                    }
+                }
+                fun esMayorLado():Int {
+                    when{
+                        lado1>lado2 && lado1>lado3 ->return lado1
+                        lado2>lado3 ->return lado2
+                        else ->return lado3
+                    }
+                }
+            }
     }
     fun pr114() {
         println("Proyecto114:")
-        //
+        //saltado q mier es esto
     }
     fun pr115() {
-        println("Proyecto115:")
-        //
+       button.setOnClickListener {
+                   mensajeComplex("This program assigns values to the class Alumno")
+                   val num1 = in1.text.toString()
+                   val num2 = in2.text.toString().toInt()
+                   val num3 = in3.text.toString()
+                   val num4 = in4.text.toString().toInt()
+                   //            val num5 = in5.text.toString().toInt()
+                   val alu1 = Alumno(num2,num1)
+
+                   mensaje( alu1.imprimir())
+                   mensaje(" This Student has ${ alu1.regular() } marks")
+                   val alu2 = Alumno(num4,num3)
+
+                   mensaje( alu2.imprimir())
+                   mensaje(" This Student has ${ alu2.regular() } marks")
+               }
+           }
+           class Alumno (num1: Int, num2: String){
+               var nota: Int = num1
+               var nombre: String = num2
+
+               fun imprimir() :String{
+                   return ("The student $nombre has marks of $nota")
+               }
+               fun regular():String {
+                   when{
+                       nota>4->return "Regular"
+                       else ->return "Under regular"
+                   }
+               }
+           }
     }
     fun pr116() {
-        println("Proyecto116:")
-        //
+       button.setOnClickListener {
+                   mensajeComplex("This program assigns values to the class Punto")
+
+       //            val num2 = in2.text.toString().toInt()
+       //            val num3 = in3.text.toString()
+       //            val num4 = in4.text.toString().toInt()
+                   //            val num5 = in5.text.toString().toInt()
+                   val clase1 = Punto(10,10)
+                   mensaje(clase1.imprimir())
+                   val clase2 = Punto(-10,10)
+                   mensaje(clase2.imprimir())
+                   val clase3 = Punto(10,-10)
+                   mensaje(clase3.imprimir())
+                   val clase4 = Punto(-10,-10)
+                   mensaje(clase4.imprimir())
+                   val clase0 = Punto(0,0)
+                   mensaje(clase0.imprimir())
+               }
+           }
+           class Punto (num1: Int, num2: Int){
+               var x: Int = num1
+               var y: Int = num2
+
+               fun imprimir() :String{
+                   if (x >0 && y >0)
+                       return "The point x:$x y:$y is in the first quarter"
+                   else if (x <0 && y >0)
+                       return "The point x:$x y:$y is in the second quarter"
+                   else if (x <0 && y <0)
+                       return "The point x:$x y:$y is in the fourth quarter"
+                   else if (x >0 && y <0)
+                       return "The point x:$x y:$y is in the third quarter"
+                   else
+                       return "The point x:$x y:$y is in the coordinates axis"
+
+               }
+
+           }
     }
     fun pr117() {
-        println("Proyecto117:")
-        //
+         button.setOnClickListener {
+                    mensajeComplex("This program assigns values to the class Operacion")
+
+        //            val num2 = in2.text.toString().toInt()
+        //            val num3 = in3.text.toString()
+        //            val num4 = in4.text.toString().toInt()
+                    //            val num5 = in5.text.toString().toInt()
+                    val clase1 = operacion()
+                    mensaje(clase1.cargar(15,10))
+
+                }
+            }
+            class operacion (){
+                var x: Int = 0
+                var y: Int = 0
+                var palabras=""
+                fun cargar(num1: Int, num2: Int):String{
+                    x=num1
+                    y=num2
+                    palabras+= "the addition of the numbers is ${ sumar() } " +
+                            "and the substraction is ${restar()}"
+                    return  palabras
+
+                }
+                fun sumar():Int=x+y
+                fun restar():Int=x-y
+
+
+            }
     }
     fun pr118() {
-        println("Proyecto118:")
-        //
+        button.setOnClickListener {
+                   mensajeComplex("This program assigns values to the class Operacion")
+
+       //            val num2 = in2.text.toString().toInt()
+       //            val num3 = in3.text.toString()
+       //            val num4 = in4.text.toString().toInt()
+                   //            val num5 = in5.text.toString().toInt()
+                   val clase1 = Hijos()
+                   val arraisico = intArrayOf(5,4,50,20,35)
+                   mensaje(clase1.cargar(arraisico))
+
+               }
+           }
+           class Hijos (){
+               var edades = IntArray(5)
+               var palabras=""
+               fun cargar(numbers:IntArray):String{
+                   for (i in numbers.indices)
+                       edades[i]=numbers[i]
+                       palabras+= "The biggest age is ${ mayor() }\n " +
+                           "and the average age is ${promedio()}"
+                   return  palabras
+               }
+               fun mayor(): Int{
+                   var largest = edades[0]
+                   for (num in edades) {
+                       if (largest < num)
+                           largest = num
+                   }
+                   return largest
+               }
+               fun promedio():Int {
+                   var prom=0
+                   for (i in edades){
+                       prom+=i
+                   }
+                   prom /= edades.size
+                   return (prom)
+               }
+
+
+           }
     }
     fun pr119() {
-        println("Proyecto119:")
-        //
+       button.setOnClickListener {
+                   mensajeComplex("This program operates the class Clientes from the class Banco")
+
+       //            val num2 = in2.text.toString().toInt()
+       //            val num3 = in3.text.toString()
+       //            val num4 = in4.text.toString().toInt()
+                   //            val num5 = in5.text.toString().toInt()
+                   val clase1 = Banco()
+                   clase1.operar()
+                   mensaje(clase1.depositosTotales())
+               }
+           }
+           class Cliente(var nombre: String, var dineros: Float) {
+               fun depositar(monto: Float) {
+                   this.dineros += monto
+               }
+               fun extraer(monto: Float) {
+                   this.dineros -= monto
+               }
+               fun imprimir() :String{
+                   return ("$nombre has deposited the sum of $dineros")
+               }
+           }
+           class Banco {
+               val cliente1: Cliente = Cliente("Juan", 0f)
+               var cliente2: Cliente = Cliente("Ana", 0f)
+               var cliente3: Cliente = Cliente("Luis", 0f)
+
+               fun operar() {
+                   cliente1.depositar(100f)
+                   cliente2.depositar(150f)
+                   cliente3.depositar(200f)
+                   cliente3.extraer(150f)
+               }
+               fun depositosTotales() :String{
+                   var palabras =""
+                   val total = cliente1.dineros + cliente2.dineros + cliente3.dineros
+                   println("El total de dinero del banco es: $total")
+                   palabras+=cliente1.imprimir()
+                   palabras+=cliente2.imprimir()
+                   palabras+=cliente3.imprimir()
+                   return palabras
+               }
+           }
     }
     fun pr120() {
-        println("Proyecto120:")
-        //
+         button.setOnClickListener {
+                    mensajeComplex("This program operates the class Dado from the class juego")
+
+        //            val num2 = in2.text.toString().toInt()
+        //            val num3 = in3.text.toString()
+        //            val num4 = in4.text.toString().toInt()
+                    //            val num5 = in5.text.toString().toInt()
+                    val clase1 = juego()
+                    clase1.operar()
+                    mensaje(clase1.operar())
+                }
+            }
+            class Dado() {
+                var valor: Int = 0
+                fun tirar() :Int{
+                    return ((Math.random()*6)+1).toInt()
+                }
+
+            }
+            class juego {
+                val clasedado1 =Dado()
+                val clasedado2 =Dado()
+                val clasedado3 =Dado()
+                fun operar() :String{
+                    if (clasedado1.tirar() == clasedado2.tirar() && clasedado1.tirar() == clasedado3.tirar()){
+                        return "you win"
+                    }else{
+                        return "you lose"
+                    }
+
+                }
+
+            }
     }
     fun pr121() {
-        println("Proyecto121:")
-        //
+
+        button.setOnClickListener {
+            mensajeComplex("This program operates the class Socio from the class Club")
+
+//            val num2 = in2.text.toString().toInt()
+//            val num3 = in3.text.toString()
+//            val num4 = in4.text.toString().toInt()
+            //            val num5 = in5.text.toString().toInt()
+            val clase1 = Club()
+            clase1.operar()
+            mensaje("The member who has been in the club the longest is  ${ clase1.operar() }")
+        }
+    }
+    class Socio(anyo:Int,nom:String) {
+        var antiguedad: Int = anyo
+        var nombre:String=nom
+        fun imprimir() :String{
+            return "The member $nombre has ben a member for $antiguedad years"
+        }
+
+    }
+    class Club {
+        val clase1 =Socio(5,"Manuel")
+        val clase2 =Socio(10,"Eufrasio")
+        val clase3 =Socio(15,"Sigismundo")
+        fun operar() :String{
+           when{
+               clase1.antiguedad>clase2.antiguedad && clase1.antiguedad>clase3.antiguedad -> return clase1.nombre
+               clase2.antiguedad>clase3.antiguedad -> return clase2.nombre
+               else ->return clase3.nombre
+           }
+
+        }
+
+    }
     }
     fun pr122() {
-        println("Proyecto122:")
-        //
+             button.setOnClickListener {
+                    mensajeComplex("This program assigns values to the class Operacion")
+
+                    //            val num2 = in2.text.toString().toInt()
+                    //            val num3 = in3.text.toString()
+                    //            val num4 = in4.text.toString().toInt()
+                    //            val num5 = in5.text.toString().toInt()
+                    val clase1 = operacion()
+                    mensaje(clase1.cargar(15,10))
+
+                }
+            }
+            class operacion (){
+                var x: Int = 0
+                var y: Int = 0
+                var palabras=""
+                fun cargar(num1: Int, num2: Int):String{
+                    x=num1
+                    y=num2
+                    palabras+= "the addition of the numbers is ${ sumar() } " +
+                            "and the substraction is ${restar()}"
+                    return  palabras
+
+                }
+                private fun sumar():Int=x+y
+                private fun restar():Int=x-y
+
+
+            }
     }
     fun pr123() {
-        println("Proyecto123:")
-        //
+                button.setOnClickListener {
+                    mensajeComplex("This program operates the class Dado ")
+
+                    //            val num2 = in2.text.toString().toInt()
+                    //            val num3 = in3.text.toString()
+                    //            val num4 = in4.text.toString().toInt()
+                    //            val num5 = in5.text.toString().toInt()
+                    val clase1 = Dado()
+                    clase1.tirar()
+                    mensajeComplex(clase1.imprimir())
+                }
+            }
+            class Dado() {
+                private var valor: Int = 1
+                fun tirar() :Int{
+                    valor=((Math.random()*6)+1).toInt()
+                    return valor
+                }
+                fun imprimir():String {
+                    return "the value of the die is $valor"
+                }
+
+            }
     }
     fun pr124() {
-        println("Proyecto124:")
-        //
+          button.setOnClickListener {
+                    mensajeComplex("This program operates the class Arreglo ")
+
+
+                    val clase1 = Arreglo()
+                    clase1.tirar()
+                    mensajeComplex(clase1.imprimir())
+                }
+            }
+            class Arreglo() {
+                private var valores=IntArray(5)
+                fun tirar(){
+                    for(i in valores.indices)
+                        valores[i] = ((Math.random() * 11)).toInt()
+                }
+                fun imprimir():String {
+                    var palabras="The list of values is as follows:\n"
+                    for(i in valores){
+                        palabras+="$i\n"
+                    }
+                    return palabras
+                }
+
+            }
     }
     fun pr125() {
         println("Proyecto125:")
