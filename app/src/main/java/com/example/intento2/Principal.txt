@@ -2936,16 +2936,94 @@ button.setOnClickListener {
             }
     }
     fun pr125() {
-        println("Proyecto125:")
-        //
+         button.setOnClickListener {
+                    mensajeComplex("This program operates the class Persona ")
+
+                    //            val num2 = in2.text.toString().toInt()
+                    //            val num3 = in3.text.toString()
+                    //            val num4 = in4.text.toString().toInt()
+                    //            val num5 = in5.text.toString().toInt()
+                    val persona1 = Persona()
+                    persona1.nom = "juan"
+                    persona1.edad = 23
+                    mensaje(persona1.nom)
+                    mensaje(persona1.edad.toString())
+                    persona1.edad = -50
+                    mensaje(persona1.edad.toString())
+                }
+            }
+            class Persona {
+                var nom: String = ""
+                    set(valor) {
+                        field = valor.uppercase(Locale.getDefault())
+                    }
+                    get() {
+                        return "(" + field + ")"
+                    }
+
+                var edad: Int = 0
+                    set(valor) {
+                        if (valor >= 0)
+                            field = valor
+                        else
+                            field = 0
+                    }
+            }
     }
     fun pr126() {
-        println("Proyecto126:")
-        //
+                button.setOnClickListener {
+                    mensajeComplex("This program operates the class Empleado ")
+
+                    val empleado1 = Empleado("Juan", 12000.50)
+                   mensaje( empleado1.imprimir())
+                    val empleado2 = Empleado("Ana", -1200.0)
+                   mensaje( empleado2.imprimir())
+
+                }
+            }
+            class Empleado(var nombre: String, sueldo: Double) {
+                var sueldo: Double = 0.0
+                    set(valor) {
+                        if (valor < 0)
+                            field = 0.0
+                        else
+                            field = valor
+                    }
+                init {
+                    this.sueldo = sueldo
+                }
+
+                fun imprimir() :String{
+                    return ("$nombre has a salary of $sueldo")
+                }
+            }
     }
     fun pr127() {
-        println("Proyecto127:")
-        //
+        button.setOnClickListener {
+                    mensajeComplex("This program operates the class Dado ")
+
+                    val clase1 = Dado()
+                    clase1.tirar()
+                    mensajeComplex(clase1.imprimir())
+                }
+            }
+            class Dado() {
+                private var valor: Int = 1
+                    set(valor) {
+                        if (valor<1 || valor >6)
+                            field = 1
+                        else
+                            field = valor
+                    }
+                fun tirar() :Int{
+                    valor=((Math.random()*6)+1).toInt()
+                    return valor
+                }
+                fun imprimir():String {
+                    return "the value of the die is $valor"
+                }
+
+            }
     }
     fun pr128() {
         println("Proyecto128:")

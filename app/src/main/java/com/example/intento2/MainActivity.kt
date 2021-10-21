@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        enunciado.text = "Proyecto 125"
+        enunciado.text = "Proyecto 127"
         in1.isVisible = false
         in2.isVisible = false
         in3.isVisible = false
@@ -20,38 +20,31 @@ class MainActivity : AppCompatActivity() {
         in5.isVisible = false
         resultado.text = ""
         button.setOnClickListener {
-            mensajeComplex("This program operates the class Persona ")
+            mensajeComplex("This program operates the class Dado ")
 
-            //            val num2 = in2.text.toString().toInt()
-            //            val num3 = in3.text.toString()
-            //            val num4 = in4.text.toString().toInt()
-            //            val num5 = in5.text.toString().toInt()
-            val persona1 = Persona()
-            persona1.nom = "juan"
-            persona1.edad = 23
-            mensaje(persona1.nom)
-            mensaje(persona1.edad.toString())
-            persona1.edad = -50
-            mensaje(persona1.edad.toString())
+            val clase1 = Dado()
+            clase1.tirar()
+            mensajeComplex(clase1.imprimir())
         }
     }
-    class Persona {
-        var nom: String = ""
+    class Dado() {
+        private var valor: Int = 1
             set(valor) {
-                field = valor.uppercase(Locale.getDefault())
-            }
-            get() {
-                return "(" + field + ")"
-            }
-
-        var edad: Int = 0
-            set(valor) {
-                if (valor >= 0)
-                    field = valor
+                if (valor<1 || valor >6)
+                    field = 1
                 else
-                    field = 0
+                    field = valor
             }
+        fun tirar() :Int{
+            valor=((Math.random()*6)+1).toInt()
+            return valor
+        }
+        fun imprimir():String {
+            return "the value of the die is $valor"
+        }
+
     }
+
 
 
     fun mensaje(mensaje: String) {
